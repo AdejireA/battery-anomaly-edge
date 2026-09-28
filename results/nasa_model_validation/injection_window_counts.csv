@@ -1,0 +1,22 @@
+anomaly_family,severity,channel,drift_sign,accepted_windows,rejected_windows,rejection_reasons
+A1_ACCELERATED_DEGRADATION,mild,joint,0,74,4,"{""Missing required anomaly feature"": 4}"
+A1_ACCELERATED_DEGRADATION,moderate,joint,0,74,4,"{""Missing required anomaly feature"": 4}"
+A1_ACCELERATED_DEGRADATION,strong,joint,0,74,4,"{""Missing required anomaly feature"": 4}"
+A2_EARLY_VOLTAGE_COLLAPSE,mild,joint,0,164,0,{}
+A2_EARLY_VOLTAGE_COLLAPSE,moderate,joint,0,164,0,{}
+A2_EARLY_VOLTAGE_COLLAPSE,strong,joint,0,164,0,{}
+A3_THERMAL_ABNORMALITY,mild,joint,0,164,0,{}
+A3_THERMAL_ABNORMALITY,moderate,joint,0,164,0,{}
+A3_THERMAL_ABNORMALITY,strong,joint,0,164,0,{}
+A4_SENSOR_DRIFT,mild,mean_voltage_v,-1,159,0,{}
+A4_SENSOR_DRIFT,mild,mean_voltage_v,1,159,0,{}
+A4_SENSOR_DRIFT,mild,mean_temp_c,-1,159,0,{}
+A4_SENSOR_DRIFT,mild,mean_temp_c,1,159,0,{}
+A4_SENSOR_DRIFT,moderate,mean_voltage_v,-1,159,0,{}
+A4_SENSOR_DRIFT,moderate,mean_voltage_v,1,159,0,{}
+A4_SENSOR_DRIFT,moderate,mean_temp_c,-1,159,0,{}
+A4_SENSOR_DRIFT,moderate,mean_temp_c,1,159,0,{}
+A4_SENSOR_DRIFT,strong,mean_voltage_v,-1,159,0,{}
+A4_SENSOR_DRIFT,strong,mean_voltage_v,1,159,0,{}
+A4_SENSOR_DRIFT,strong,mean_temp_c,-1,159,0,{}
+A4_SENSOR_DRIFT,strong,mean_temp_c,1,159,0,{}

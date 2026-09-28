@@ -1,0 +1,18 @@
+{
+  "phase4c_tests_passed": 8,
+  "saved_models_checked": 72,
+  "eligible_combinations": 58,
+  "all_metrics_eligible_only": true,
+  "original_fields_preserved": true,
+  "independent_rolling_recomputation_passed": true,
+  "synthetic_copy_rows_by_history": {
+    "5": 42087,
+    "10": 39972,
+    "20": 35742
+  },
+  "frozen_protocol_and_original_models_unchanged": true,
+  "test_cell_accessed": false,
+  "final_model": null,
+  "final_threshold": null,
+  "figures_checked": 7
+}

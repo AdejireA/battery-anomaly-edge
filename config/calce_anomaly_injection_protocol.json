@@ -1,0 +1,86 @@
+{
+  "version": "1.0",
+  "status": "CALCE_VALIDATION_DERIVED_NO_TEST_ACCESS",
+  "calibration_cell": "CS2-37",
+  "calibration_rows": 1036,
+  "source_sha256": "22e8cb819fa61b6172962515fb21f66c84c53cf1b6acb45a83245ee25df08831",
+  "statistics": {
+    "duration_s": {
+      "median": 3074.818626004475,
+      "MAD": 287.265981048542,
+      "p05": 1034.532459575712,
+      "p95": 3482.9143108322896,
+      "minimum": 595.7555930122326,
+      "maximum": 3714.914296016226
+    },
+    "time_to_3_4v_s": {
+      "median": 2870.34530232509,
+      "MAD": 338.5124807471291,
+      "p05": 390.03782281669925,
+      "p95": 3322.0246074619977,
+      "minimum": 209.7737435422732,
+      "maximum": 3526.122675248805
+    },
+    "mean_voltage_v": {
+      "median": 3.61999121758719,
+      "MAD": 0.029179482218267383,
+      "p05": 3.337686336558798,
+      "p95": 3.659322768186046,
+      "minimum": 3.306350751356645,
+      "maximum": 3.672856949577647
+    },
+    "mean_current_a": {
+      "median": -1.099691321020541,
+      "MAD": 3.353640529690782e-05,
+      "p05": -1.099777600687483,
+      "p95": -1.099615670128084,
+      "minimum": -1.099903308826944,
+      "maximum": -1.0995860473782408
+    }
+  },
+  "severity": {
+    "mild": {
+      "multiplier": 1.5,
+      "timing_factor": 0.849688696830087,
+      "duration_reduction_at_median_s": 462.17999468585407,
+      "crossing_reduction_at_median_s": 431.44534294012226,
+      "voltage_offset_v": 0.043769223327401074
+    },
+    "moderate": {
+      "multiplier": 3.0,
+      "timing_factor": 0.738659782346396,
+      "duration_reduction_at_median_s": 803.5737689653652,
+      "crossing_reduction_at_median_s": 750.136666050639,
+      "voltage_offset_v": 0.08753844665480215
+    },
+    "strong": {
+      "multiplier": 5.0,
+      "timing_factor": 0.6290605655934088,
+      "duration_reduction_at_median_s": 1140.5714820329517,
+      "crossing_reduction_at_median_s": 1064.7242629960847,
+      "voltage_offset_v": 0.14589741109133691
+    }
+  },
+  "families": {
+    "CALCE_A2_EARLY_VOLTAGE_COLLAPSE": {
+      "window_cycles": 5,
+      "affected_features": [
+        "duration_s",
+        "time_to_3_4v_s",
+        "mean_voltage_v"
+      ],
+      "directions": "timing multiplied by shared factor; mean voltage reduced by offset"
+    },
+    "CALCE_A4_VOLTAGE_SENSOR_DRIFT": {
+      "window_cycles": 10,
+      "affected_features": [
+        "mean_voltage_v"
+      ],
+      "directions": "separate positive and negative linear ramps from zero to total offset"
+    }
+  },
+  "timing_redesign": "Use factor=1/(1+m*max(MAD/median of both timing features)) instead of subtracting m*MAD: guarantees positive times and preserves crossing<=duration. No fitted/test-derived magnitudes.",
+  "physical_guard": "Reject whole scenario if mean voltage leaves original observed min/max voltage envelope, duration/crossing becomes nonpositive or crossing exceeds duration. No clipping.",
+  "baseline_rule": "Fresh scenario context; prior injected samples influence later baselines only within that scenario. Current/future excluded.",
+  "protected": "All columns except explicitly affected raw features remain unchanged; no capacity or metadata changes"
+}

@@ -1,0 +1,7 @@
+{
+  "stage": "FREEZE_COMPLETE_TEST_DATA_STILL_LOCKED",
+  "utc": "2026-09-19T07:26:35.967298+00:00",
+  "configuration_sha256": "fd4747b45ef8edfae3674fd284209b8df7b2aa4520906ca7ba9799eda46cde21",
+  "model_bundle_sha256": "8801466200c725e5869ab6483a4b2ba2e93418013026c04b366aaa0f20045aee",
+  "test_accesses_before_freeze": []
+}

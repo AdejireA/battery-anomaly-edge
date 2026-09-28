@@ -1,0 +1,20 @@
+{
+  "status": "development_only",
+  "training_cells": ["B0005", "B0006"],
+  "validation_cell": "B0007",
+  "nominal_training_fraction": 0.30,
+  "nominal_last_cycle": 50,
+  "n_estimators": [100, 200],
+  "max_features": [0.75, 1.0],
+  "max_samples": "auto",
+  "contamination": "auto",
+  "seeds": [42, 123, 2026],
+  "threshold_percentiles": [95.0, 97.5, 99.0],
+  "threshold_source": "in_sample_clean_nominal_training_scores_after_required_feature_drop",
+  "clean_validation_false_positive_tolerance": 0.05,
+  "threshold_review_rule": "For each configuration, eligible percentiles must have clean B0007 FPR <= 0.05 for every seed. Suggest the lowest eligible percentile for review only. If none qualifies, return no recommendation. Never use synthetic metrics in this rule; never finalize automatically.",
+  "display_reference": {"n_estimators": 100, "max_features": 1.0},
+  "display_reference_note": "Declared before fitting, used only to keep narrative and plots readable; not a selected or final model.",
+  "metric_policy": "Primary precision/F1 and average precision (PR-AUC) use equal total clean and synthetic class weights (50% evaluation prevalence). Recall and clean FPR are unweighted within class. Report raw instance precision/F1/AP too. ROC-AUC compares all eligible positive copies with the full feature-eligible clean B0007 trajectory. Overlapping windows are dependent, not independent replicates.",
+  "score_convention": "anomaly_score = -IsolationForest.score_samples(StandardScaler.transform(X)); larger means more anomalous; anomaly iff score > threshold"
+}

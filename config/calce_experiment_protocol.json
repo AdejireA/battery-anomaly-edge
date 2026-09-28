@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "status": "DEVELOPMENT_SPLIT_FROZEN",
+  "training_cells": ["CS2-35", "CS2-36"],
+  "validation_cell": "CS2-37",
+  "final_test_cell": "CS2-38",
+  "final_test_access": "LOCKED",
+  "nominal_training_fraction": 0.30,
+  "nominal_rule": "First floor(fraction * complete cycle count) cycles separately per training cell, before history-row exclusion",
+  "history_window": 10,
+  "epsilon": 1e-9,
+  "epsilon_units": "Base-feature units; denominator numerical guard only",
+  "mad_scale": 1.4826,
+  "base_features": ["duration_s", "time_to_3_4v_s", "mean_voltage_v", "mean_current_a"],
+  "model": {"n_estimators": 100, "max_features": 1.0, "max_samples": "auto", "contamination": "auto"},
+  "seeds": [42, 123, 2026],
+  "threshold_percentiles": [95, 97.5, 99],
+  "threshold_source": "Clean nominal CALCE training scores only",
+  "clean_fpr_limit": 0.05,
+  "selection_rule": "First percentile in 95,97.5,99 order with validation clean FPR <=0.05 for all seeds. Synthetic labels never used. No automatic final-test access.",
+  "diagnostic_early_late_rule": "First and last chronological third of usable validation rows",
+  "synthetic_evaluation_prevalence": 0.50
+}

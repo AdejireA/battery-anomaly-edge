@@ -1,0 +1,23 @@
+{
+  "description": "Candidate pool retained in full. Named model feature sets are Phase 3 experimental hypotheses, not a final selected feature set.",
+  "model_feature_sets": {
+    "degradation_aware": ["capacity_retention", "capacity_slope_5", "duration_s", "time_to_3_4v_s", "mean_voltage_v", "mean_temp_c", "delta_temp_c"],
+    "measurement_oriented": ["duration_s", "time_to_3_4v_s", "mean_voltage_v", "mean_current_a", "start_temp_c", "mean_temp_c", "max_temp_c", "delta_temp_c"]
+  },
+  "notes": {
+    "offline_analysis_only": "OFFLINE ANALYSIS ONLY: capacity_trend_ah and rolling_capacity_slope use future observations. Exclude from future model inputs.",
+    "rest_duration_before_discharge_h": "Metadata/experimental analysis only. Immediate preceding operation end estimate; missing values remain unimputed.",
+    "causal_features": "Per-cell trailing five observations including current cycle; first four are NaN. Slopes are OLS against consecutive cycle number, in Ah/cycle or retention/cycle.",
+    "availability": "Discharge summaries, including current capacity, become available after the discharge completes. Causal does not mean available at discharge start."
+  },
+  "metadata": ["cell_id", "cycle", "operation_index", "timestamp", "cutoff_voltage_target_v", "nasa_eol_reached", "rest_duration_before_discharge_h"],
+  "offline_analysis_only": ["capacity_trend_ah", "rolling_capacity_slope"],
+  "health_analysis_features": ["capacity_ah", "soh_nominal"],
+  "candidate_model_features": [
+    "capacity_retention", "capacity_rolling_median_5", "capacity_slope_5",
+    "retention_slope_5", "delta_capacity_ah", "delta_soh_nominal", "duration_s",
+    "time_to_3_4v_s", "mean_voltage_v", "min_voltage_v", "max_voltage_v",
+    "mean_current_a", "ambient_temp_c", "start_temp_c", "mean_temp_c",
+    "max_temp_c", "delta_temp_c"
+  ]
+}

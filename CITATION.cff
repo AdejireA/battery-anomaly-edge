@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software or research artifacts, please cite it as below."
+title: "Edge-Deployed Label-Free Anomaly Detection for Off-Grid Solar Battery Monitoring"
+type: software
+authors:
+  - family-names: Adegite
+    given-names: Adejire
+version: 0.1.0
+date-released: "2026-09-28"
+repository-code: "https://github.com/AdejireA/battery-anomaly-edge"

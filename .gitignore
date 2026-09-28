@@ -1,0 +1,71 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Testing and linting caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Raw and processed datasets (external or generated locally)
+data/raw/
+data/processed/
+*.mat
+*.xlsx
+*.csv.tmp
+
+# Serialized model binaries
+models/development/
+*.joblib
+
+# Edge deployment sample data and unpacked binaries
+deployment/pi/sample_data/
+deployment/pi/model.joblib
+deployment/pi/scaler.joblib
+
+# Figures (deferred from initial public release)
+figures/
+
+# Local generated outputs and temporary files
+output/
+tmp/
+*.tmp
+*.log
+
+# OS and editor clutter
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Internal reconstruction records (operational artifacts, not public)
+RECONSTRUCTION_PHASE1_REPORT.md
+RECONSTRUCTION_PHASE2_REPORT.md
+RECONSTRUCTION_PHASE3_REPORT.md
+
+# Local secrets and environment files
+.env
+.env.*
+
+# Internal publication report
+RECONSTRUCTION_PHASE4_REPORT.md
+
+# Local inventories and regenerated edge outputs
+folder_structure.txt
+largest_files.txt
+deployment/pi/results/local_*
+deployment/pi/results/b0018_predictions.csv

@@ -1,0 +1,7 @@
+feature_set,history_window,training_rows,per_training_cell,validation_rows
+RELATIVE_A,5,82,41,159
+RELATIVE_B,5,90,45,163
+RELATIVE_A,10,72,36,154
+RELATIVE_B,10,80,40,158
+RELATIVE_A,20,52,26,144
+RELATIVE_B,20,60,30,148

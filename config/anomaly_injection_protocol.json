@@ -1,0 +1,464 @@
+{
+  "protocol_version": "1.0",
+  "status": "frozen_design_only_no_injection",
+  "calibration_cells": [
+    "B0007"
+  ],
+  "calibration_row_count": 168,
+  "calibration_sha256": "48e44a8210a23fc66c833b766d1f5a232f1ebba4a8ae99fd4974454636022741",
+  "statistics": {
+    "capacity_retention": {
+      "count": 168,
+      "median": 0.8546169874615185,
+      "MAD": 0.07746142334835915,
+      "mean": 0.8695800772524874,
+      "std": 0.08511152325116599,
+      "min": 0.7405692816217144,
+      "max": 1.0,
+      "p5": 0.7526454688614683,
+      "p25": 0.7921822064317539,
+      "p75": 0.9581994507168642,
+      "p95": 0.9945011573080266
+    },
+    "capacity_slope_5": {
+      "count": 164,
+      "median": -0.00351911144533385,
+      "MAD": 0.0016358421124148502,
+      "mean": -0.0028556329373853884,
+      "std": 0.004609227190772568,
+      "min": -0.0208023999554897,
+      "max": 0.0180240165171814,
+      "p5": -0.007789658683417095,
+      "p25": -0.005210277112018675,
+      "p75": -0.0020362767468392502,
+      "p95": 0.006653276388866848
+    },
+    "duration_s": {
+      "count": 168,
+      "median": 3086.078,
+      "MAD": 200.14900000000011,
+      "mean": 3129.523886904762,
+      "std": 246.65449902055903,
+      "min": 2792.485,
+      "max": 3690.234,
+      "p5": 2814.2682,
+      "p25": 2901.34375,
+      "p75": 3323.23075,
+      "p95": 3565.3984
+    },
+    "time_to_3_4v_s": {
+      "count": 168,
+      "median": 2361.766,
+      "MAD": 407.1485,
+      "mean": 2414.978148809524,
+      "std": 418.69989333323826,
+      "min": 1742.813,
+      "max": 3017.844,
+      "p5": 1805.6558,
+      "p25": 2043.4375,
+      "p75": 2858.098,
+      "p95": 2977.7799
+    },
+    "mean_voltage_v": {
+      "count": 168,
+      "median": 3.5132023214903247,
+      "MAD": 0.0323145279862993,
+      "mean": 3.5175684945636356,
+      "std": 0.03516943128494214,
+      "min": 3.4578782949034514,
+      "max": 3.572496559005355,
+      "p5": 3.4637548631028254,
+      "p25": 3.489110262100862,
+      "p75": 3.552448215308045,
+      "p95": 3.568472465389357
+    },
+    "mean_current_a": {
+      "count": 168,
+      "median": -1.904097596322926,
+      "MAD": 0.032908078761685666,
+      "mean": -1.9105505710391106,
+      "std": 0.04246250416425106,
+      "min": -1.978806775438716,
+      "max": -1.8356063485512333,
+      "p5": -1.9781466217102823,
+      "p25": -1.9469876449192531,
+      "p75": -1.8766727143108641,
+      "p95": -1.8500640524920124
+    },
+    "start_temp_c": {
+      "count": 168,
+      "median": 23.936518859523108,
+      "MAD": 0.2602077489551373,
+      "mean": 23.949213007099686,
+      "std": 0.4525249593030838,
+      "min": 22.97528398790301,
+      "max": 26.469089975309167,
+      "p5": 23.307299123652488,
+      "p25": 23.677434491421117,
+      "p75": 24.19210976351719,
+      "p95": 24.6397621741946
+    },
+    "mean_temp_c": {
+      "count": 168,
+      "median": 32.45221439908598,
+      "MAD": 0.31101713846474155,
+      "mean": 32.367750973956205,
+      "std": 0.5833859237245549,
+      "min": 30.88485700435457,
+      "max": 33.8805778170798,
+      "p5": 31.260307286914212,
+      "p25": 32.03015526584649,
+      "p75": 32.721457359591945,
+      "p95": 33.27086980666513
+    },
+    "max_temp_c": {
+      "count": 168,
+      "median": 40.60782115024788,
+      "MAD": 0.4868023047245451,
+      "mean": 40.44047549852638,
+      "std": 0.8956171401192031,
+      "min": 38.34572083526661,
+      "max": 42.33252236723314,
+      "p5": 38.68691304262313,
+      "p25": 39.9383380219897,
+      "p75": 41.03113149837158,
+      "p95": 41.79617853318686
+    },
+    "delta_temp_c": {
+      "count": 168,
+      "median": 16.72925048272181,
+      "MAD": 0.56620816398061,
+      "mean": 16.4912624914267,
+      "std": 0.776006936409508,
+      "min": 14.580852214023936,
+      "max": 17.624392417554443,
+      "p5": 15.144987443283608,
+      "p25": 15.778558050963545,
+      "p75": 17.127918762984425,
+      "p95": 17.444967355650302
+    }
+  },
+  "units": {
+    "capacity_retention": "fraction",
+    "capacity_slope_5": "Ah/cycle",
+    "duration_s": "s",
+    "time_to_3_4v_s": "s",
+    "mean_voltage_v": "V",
+    "mean_current_a": "A",
+    "start_temp_c": "degC",
+    "mean_temp_c": "degC",
+    "max_temp_c": "degC",
+    "delta_temp_c": "degC"
+  },
+  "mad_definition": "median(abs(x-median(x))), unscaled; NaNs omitted per feature; ddof=1 std; linear quantiles",
+  "severity_multipliers": {
+    "mild": 1.5,
+    "moderate": 3.0,
+    "strong": 5.0
+  },
+  "raw_mad_proposals": {
+    "capacity_retention": {
+      "mild": 0.11619213502253872,
+      "moderate": 0.23238427004507745,
+      "strong": 0.38730711674179574
+    },
+    "capacity_slope_5": {
+      "mild": 0.0024537631686222753,
+      "moderate": 0.004907526337244551,
+      "strong": 0.008179210562074251
+    },
+    "duration_s": {
+      "mild": 300.2235000000002,
+      "moderate": 600.4470000000003,
+      "strong": 1000.7450000000006
+    },
+    "time_to_3_4v_s": {
+      "mild": 610.72275,
+      "moderate": 1221.4455,
+      "strong": 2035.7425
+    },
+    "mean_voltage_v": {
+      "mild": 0.04847179197944895,
+      "moderate": 0.0969435839588979,
+      "strong": 0.1615726399314965
+    },
+    "mean_current_a": {
+      "mild": 0.0493621181425285,
+      "moderate": 0.098724236285057,
+      "strong": 0.16454039380842833
+    },
+    "start_temp_c": {
+      "mild": 0.390311623432706,
+      "moderate": 0.780623246865412,
+      "strong": 1.3010387447756866
+    },
+    "mean_temp_c": {
+      "mild": 0.4665257076971123,
+      "moderate": 0.9330514153942246,
+      "strong": 1.5550856923237077
+    },
+    "max_temp_c": {
+      "mild": 0.7302034570868177,
+      "moderate": 1.4604069141736353,
+      "strong": 2.4340115236227255
+    },
+    "delta_temp_c": {
+      "mild": 0.849312245970915,
+      "moderate": 1.69862449194183,
+      "strong": 2.83104081990305
+    }
+  },
+  "protected_fields": [
+    "cell_id",
+    "cycle",
+    "operation_index",
+    "timestamp",
+    "cutoff_voltage_target_v",
+    "nasa_eol_reached",
+    "rest_duration_before_discharge_h"
+  ],
+  "held_out_policy": "B0018 is not a calibration source; no injection or tuning on it in this phase.",
+  "scenario_policy": "Separate family/severity/channel/sign scenarios; no combinations. Later evaluate all eligible contiguous windows independently, never stitch overlapping copies. A1 uses its derived ramp length, A4 uses 10 cycles, A2/A3 use 5-cycle constant-offset/factor windows. First zero-offset ramp sample is not an injected positive. Missing inputs remain missing and make a window ineligible; no imputation. Reject any invalid window and report rejected counts; do not select windows using scores or labels.",
+  "families": {
+    "A1_ACCELERATED_DEGRADATION": {
+      "feature_sets": [
+        "degradation_aware"
+      ],
+      "affected_features": [
+        "capacity_retention",
+        "capacity_slope_5"
+      ],
+      "directions": {
+        "capacity_retention": -1,
+        "capacity_slope_5": -1
+      },
+      "window_cycles": 91,
+      "rule": "Retention offset is -a*j/(L-1), j=0..L-1. Recompute causal capacity slope using C0 times altered retention. Persist endpoint loss after the ramp; no artificial recovery. Only ramp cycles are evaluated in this scenario.",
+      "severity": {
+        "mild": {
+          "retention_total_decrease": 0.11619213502253872,
+          "steady_slope_decrease_ah_per_cycle": 0.0024413933737858716
+        },
+        "moderate": {
+          "retention_total_decrease": 0.23238427004507745,
+          "steady_slope_decrease_ah_per_cycle": 0.004882786747571743
+        },
+        "strong": {
+          "retention_total_decrease": 0.38730711674179574,
+          "steady_slope_decrease_ah_per_cycle": 0.008137977912619573
+        }
+      },
+      "adjustment": "Independent slope offsets replaced by slope implied by retention ramp. Ramp duration comes from ratio of validation retention/capacity-slope MADs. At onset the five-cycle slope transitions causally; full decrement applies once all five samples lie on the ramp.",
+      "application_guard": "Use the target cell initial capacity to recompute slope, never its spread to recalibrate severity. Reject windows with nonpositive altered retention or unavailable five-cycle history. Preserve metadata and source health columns; use a temporary calculation array for slope, not an overwritten capacity_ah column."
+    },
+    "A2_EARLY_VOLTAGE_COLLAPSE": {
+      "feature_sets": [
+        "degradation_aware",
+        "measurement_oriented"
+      ],
+      "affected_features": [
+        "time_to_3_4v_s",
+        "duration_s",
+        "mean_voltage_v"
+      ],
+      "directions": {
+        "time_to_3_4v_s": -1,
+        "duration_s": -1,
+        "mean_voltage_v": -1
+      },
+      "severity": {
+        "mild": {
+          "time_to_3_4v_s": {
+            "factor": 0.7721416015642323,
+            "decrease_at_validation_median": 538.1482182400493,
+            "decrease_range": [
+              397.1145789530357,
+              687.641100568991
+            ],
+            "result_range": [
+              1345.6984210469645,
+              2330.202899431009
+            ]
+          },
+          "duration_s": {
+            "factor": 0.9072990353899442,
+            "decrease_at_validation_median": 286.08240746187187,
+            "decrease_range": [
+              258.8660531591118,
+              342.0882514368248
+            ],
+            "result_range": [
+              2533.6189468408884,
+              3348.145748563175
+            ]
+          },
+          "mean_voltage_v": {
+            "factor": 0.9862977032064932,
+            "decrease_at_validation_median": 0.04813894090469739,
+            "decrease_range": [
+              0.047380874672592194,
+              0.04895140814527302
+            ],
+            "result_range": [
+              3.4104974202308593,
+              3.523545150860082
+            ]
+          }
+        },
+        "moderate": {
+          "time_to_3_4v_s": {
+            "factor": 0.5962026528661776,
+            "decrease_at_validation_median": 953.6748453508593,
+            "decrease_range": [
+              703.7432659503385,
+              1218.5974012637232
+            ],
+            "result_range": [
+              1039.0697340496615,
+              1799.2465987362768
+            ]
+          },
+          "duration_s": {
+            "factor": 0.8231915396195232,
+            "decrease_at_validation_median": 545.6446997940611,
+            "decrease_range": [
+              493.73497348557584,
+              652.4645919836885
+            ],
+            "result_range": [
+              2298.7500265144245,
+              3037.7694080163114
+            ]
+          },
+          "mean_voltage_v": {
+            "factor": 0.9727831593504038,
+            "decrease_at_validation_median": 0.09561826775379352,
+            "decrease_range": [
+              0.09411252253808457,
+              0.09723206956767941
+            ],
+            "result_range": [
+              3.3637657723653667,
+              3.4752644894376754
+            ]
+          }
+        },
+        "strong": {
+          "time_to_3_4v_s": {
+            "factor": 0.42233444848765994,
+            "decrease_at_validation_median": 1364.3108589330934,
+            "decrease_range": [
+              1006.763032827876,
+              1743.3045186382067
+            ],
+            "result_range": [
+              736.0499671721242,
+              1274.5394813617936
+            ]
+          },
+          "duration_s": {
+            "factor": 0.7230497225989907,
+            "decrease_at_validation_median": 854.690158181152,
+            "decrease_range": [
+              773.3794953881575,
+              1022.0113299746362
+            ],
+            "result_range": [
+              2019.1055046118427,
+              2668.2226700253636
+            ]
+          },
+          "mean_voltage_v": {
+            "factor": 0.9550513862043377,
+            "decrease_at_validation_median": 0.15791357433469277,
+            "decrease_range": [
+              0.15542683603001844,
+              0.16057876811706415
+            ],
+            "result_range": [
+              3.302451458873433,
+              3.4119177908882907
+            ]
+          }
+        }
+      },
+      "rule": "x_prime = x * exp(-k*MAD_validation(x)/median_validation(x)); fixed factor per severity/channel.",
+      "adjustment": "Strong raw additive timing proposal gives negative time_to_3_4v_s. Redesign all three A2 channels with a positive exponential response, whose small-offset limit is the original k*MAD at the median. Time factor <= duration factor preserves time <= duration. No clipping.",
+      "application_guard": "Require positive source duration, voltage and crossing time, and crossing time <= duration. Reject invalid/missing windows. Modified summary voltage must remain between source measured min and max; reject rather than silently clip."
+    },
+    "A3_THERMAL_ABNORMALITY": {
+      "feature_sets": [
+        "degradation_aware",
+        "measurement_oriented"
+      ],
+      "affected_features": [
+        "mean_temp_c",
+        "max_temp_c",
+        "delta_temp_c"
+      ],
+      "directions": {
+        "mean_temp_c": 1,
+        "max_temp_c": 1,
+        "delta_temp_c": 1
+      },
+      "severity": {
+        "mild": {
+          "mean_temp_c": 0.4665257076971123,
+          "max_temp_c": 0.849312245970915,
+          "delta_temp_c": 0.849312245970915
+        },
+        "moderate": {
+          "mean_temp_c": 0.9330514153942246,
+          "max_temp_c": 1.69862449194183,
+          "delta_temp_c": 1.69862449194183
+        },
+        "strong": {
+          "mean_temp_c": 1.5550856923237077,
+          "max_temp_c": 2.83104081990305,
+          "delta_temp_c": 2.83104081990305
+        }
+      },
+      "rule": "Add mean offset; add identical max/delta offsets; hold start temperature fixed.",
+      "adjustment": "Use max(MAD(max_temp), MAD(delta_temp)) for both max and delta to preserve delta=max-start and the proposed heating direction.",
+      "application_guard": "Require max >= mean and max >= start, and delta=max-start before and after. These summary constraints do not establish thermal safety or a physical trace model."
+    },
+    "A4_SENSOR_DRIFT": {
+      "feature_sets": [
+        "measurement_oriented",
+        "degradation_aware"
+      ],
+      "primary_channels": [
+        "mean_voltage_v",
+        "mean_temp_c"
+      ],
+      "affected_features": [
+        "mean_voltage_v",
+        "mean_temp_c",
+        "start_temp_c",
+        "max_temp_c"
+      ],
+      "directions": {
+        "mean_voltage_v": "separate positive and negative scenarios",
+        "mean_temp_c": "separate positive and negative scenarios"
+      },
+      "window_cycles": 10,
+      "window_rationale": "Design duration of two five-cycle feature windows; fixed sensitivity scenario, not a measured fault duration.",
+      "rule": "Choose one primary channel and sign per scenario. Offset d_j = sign*a*j/(L-1), j=0..L-1. Temperature drift shifts start/mean/max equally and leaves delta unchanged. Voltage drift affects the mean-voltage summary channel only, not the raw trace or crossing time. No independent noise.",
+      "severity": {
+        "mild": {
+          "mean_voltage_v": 0.04847179197944895,
+          "mean_temp_c": 0.4665257076971123
+        },
+        "moderate": {
+          "mean_voltage_v": 0.0969435839588979,
+          "mean_temp_c": 0.9330514153942246
+        },
+        "strong": {
+          "mean_voltage_v": 0.1615726399314965,
+          "mean_temp_c": 1.5550856923237077
+        }
+      },
+      "application_guard": "Reject voltage-summary windows crossing the unchanged raw min/max envelope. Temperature offsets must preserve ordering and delta identity. This is summary-telemetry drift, not a full raw voltage sensor simulation."
+    }
+  }
+}

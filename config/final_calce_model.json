@@ -1,0 +1,161 @@
+{
+  "version": "1.0",
+  "frozen_at_utc": "2026-09-20T02:13:19.729727+00:00",
+  "status": "FROZEN_BEFORE_FINAL_TEST_ACCESS",
+  "feature_representation": "CALCE trajectory-relative measurement features",
+  "feature_names": [
+    "duration_s_prior10_robust_residual",
+    "time_to_3_4v_s_prior10_robust_residual",
+    "mean_voltage_v_prior10_robust_residual",
+    "mean_current_a_prior10_robust_residual"
+  ],
+  "history_window": 10,
+  "baseline": "Previous ten cycles only, same cell, excluding current; no imputation",
+  "mad_scale": 1.4826,
+  "epsilon": 1e-09,
+  "base_features": [
+    "duration_s",
+    "time_to_3_4v_s",
+    "mean_voltage_v",
+    "mean_current_a"
+  ],
+  "model_hyperparameters": {
+    "n_estimators": 100,
+    "max_features": 1.0,
+    "max_samples": "auto",
+    "contamination": "auto"
+  },
+  "random_state": 42,
+  "threshold_percentile": 95,
+  "threshold_value": 0.595563163424274,
+  "score_definition": "-IsolationForest.score_samples(StandardScaler.transform(X)); flag score > threshold",
+  "training_cells": [
+    "CS2-35",
+    "CS2-36"
+  ],
+  "nominal_fraction": 0.3,
+  "training_rows": {
+    "CS2-35": 254,
+    "CS2-36": 281
+  },
+  "scaler_provenance": {
+    "source_bundle": "models\\development\\calce_replication\\DEVELOPMENT_CALCE_seed42.joblib",
+    "training_matrix_sha256": "b922fb6894abdc9fe99f3af06aea96f5dc0c1dea70576ac00e2cd32a1ac3264d",
+    "fit_scope": "Only 535 nominal CS2-35/36 relative rows; no refitting",
+    "mean": [
+      -4.289326669388719,
+      -4.07732473783168,
+      -1.161358281831817,
+      -0.15293372031598845
+    ],
+    "scale": [
+      18.720190324411593,
+      17.55472249420428,
+      6.5825119268087455,
+      2.173479524172512
+    ]
+  },
+  "selection_rationale": "Seed 42 is the first predefined seed. P95 is first percentile meeting <=5% clean CS2-37 FPR for all three seeds. No synthetic metric or final-test data used.",
+  "development_clean_fpr_evidence": [
+    {
+      "seed": 42,
+      "percentile": 95.0,
+      "threshold": 0.595563163424274,
+      "clean_fpr": 0.025341130604288498,
+      "training_rows": 535,
+      "validation_rows": 1026,
+      "threshold_source": "clean_nominal_CALCE_training_only"
+    },
+    {
+      "seed": 42,
+      "percentile": 97.5,
+      "threshold": 0.6635562309989192,
+      "clean_fpr": 0.01364522417153996,
+      "training_rows": 535,
+      "validation_rows": 1026,
+      "threshold_source": "clean_nominal_CALCE_training_only"
+    },
+    {
+      "seed": 42,
+      "percentile": 99.0,
+      "threshold": 0.707656832155033,
+      "clean_fpr": 0.004873294346978557,
+      "training_rows": 535,
+      "validation_rows": 1026,
+      "threshold_source": "clean_nominal_CALCE_training_only"
+    },
+    {
+      "seed": 123,
+      "percentile": 95.0,
+      "threshold": 0.5940807022751015,
+      "clean_fpr": 0.0341130604288499,
+      "training_rows": 535,
+      "validation_rows": 1026,
+      "threshold_source": "clean_nominal_CALCE_training_only"
+    },
+    {
+      "seed": 123,
+      "percentile": 97.5,
+      "threshold": 0.6683079303201309,
+      "clean_fpr": 0.015594541910331383,
+      "training_rows": 535,
+      "validation_rows": 1026,
+      "threshold_source": "clean_nominal_CALCE_training_only"
+    },
+    {
+      "seed": 123,
+      "percentile": 99.0,
+      "threshold": 0.7080861671400984,
+      "clean_fpr": 0.003898635477582846,
+      "training_rows": 535,
+      "validation_rows": 1026,
+      "threshold_source": "clean_nominal_CALCE_training_only"
+    },
+    {
+      "seed": 2026,
+      "percentile": 95.0,
+      "threshold": 0.5800716077577744,
+      "clean_fpr": 0.03508771929824561,
+      "training_rows": 535,
+      "validation_rows": 1026,
+      "threshold_source": "clean_nominal_CALCE_training_only"
+    },
+    {
+      "seed": 2026,
+      "percentile": 97.5,
+      "threshold": 0.6638177289659223,
+      "clean_fpr": 0.01364522417153996,
+      "training_rows": 535,
+      "validation_rows": 1026,
+      "threshold_source": "clean_nominal_CALCE_training_only"
+    },
+    {
+      "seed": 2026,
+      "percentile": 99.0,
+      "threshold": 0.7056456179311642,
+      "clean_fpr": 0.004873294346978557,
+      "training_rows": 535,
+      "validation_rows": 1026,
+      "threshold_source": "clean_nominal_CALCE_training_only"
+    }
+  ],
+  "anomaly_protocol_version": "1.0",
+  "hashes": {
+    "config\\calce_experiment_protocol.json": "ab7ef8ccea50b584f10dfdaf48923a7de15792961bd1c67e22fc5185694637ca",
+    "config\\calce_anomaly_injection_protocol.json": "bea0792fb8e3ec2065458d2873366a4401e8a73d79fd70fb012e678b80068f37",
+    "scripts\\build_calce_relative_features.py": "887464e6767aef2784cd86dcfdc603684fbc13b78c9d46673e980b7fda7a14bb",
+    "scripts\\calce_replication.py": "8e67b1544cbf66f9c98fb008b85eb8a877265f67c78ec6cfb10293f57165d87d",
+    "scripts\\evaluate_final_calce.py": "0a30d1d2c21b4593555f6c68773f70f0864f8f39536d0bca974bd21eca36018d",
+    "data\\processed\\calce\\calce_cs2_relative_features.csv": "e200217ad33a97d164b82d6bfdc541c5dd282b32fb916ea4360b22d90845bdc4",
+    "results\\calce_replication\\thresholds.csv": "67d74bf2410bd29e7d6d4a8f4f73c12187535775a792356342028f758d065c44",
+    "models\\development\\calce_replication\\DEVELOPMENT_CALCE_seed42.joblib": "491ab2d22826574dcbf7cf378596ec908bfc28f253617066de45ae32b61f586e",
+    "data\\processed\\calce\\CS2_35_discharge_features.csv": "1db5751c732a99b48de59c70a1e71bb3532d857a67d782ddc5f6942a32b1f994",
+    "data\\processed\\calce\\CS2_36_discharge_features.csv": "6da7ca30ccd8e0255d7c68f39c84e0534be313adfb99567ac344a689e07bbcb1",
+    "data\\processed\\calce\\CS2_37_discharge_features.csv": "22e8cb819fa61b6172962515fb21f66c84c53cf1b6acb45a83245ee25df08831",
+    "models\\final_calce\\model_bundle.joblib": "491ab2d22826574dcbf7cf378596ec908bfc28f253617066de45ae32b61f586e",
+    "models\\final_calce\\model.joblib": "e9184bd468e00835f3624587f09c5bf23a2ca2f612fba1bdd27fae270e97d31e",
+    "models\\final_calce\\scaler.joblib": "fcf02ec5b7f826799b134a2c4d187ba4090960394a97065e6fd180c4c8ddf9c7"
+  },
+  "source_hash_scope": "Development-only relative table plus three individual source tables. Combined source contains locked test data and is not read. CS2-38 hash recorded after unlock.",
+  "configuration_hash_location": "models/final_calce/final_calce_model.sha256 and freeze_receipt.json (external digest avoids self-reference)"
+}

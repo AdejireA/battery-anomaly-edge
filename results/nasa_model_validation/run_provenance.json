@@ -1,0 +1,23 @@
+{
+  "python": "3.14.6",
+  "numpy": "2.5.3",
+  "pandas": "3.0.6",
+  "scipy": "1.18.1",
+  "scikit_learn": "1.9.1",
+  "joblib": "1.6.0",
+  "matplotlib": "3.11.2",
+  "sha256": {
+    "config\\nasa_feature_manifest.json": "ae29e5ea2168b9613d826188406cc69666a8ec7d421879145c3d75805e8edb4e",
+    "config\\anomaly_injection_protocol.json": "e00a3804aee6fb67f2280f7e2818a618e2d0c48be2a7b2daf6c9d6fefbfff017",
+    "config\\nasa_experiment_protocol.json": "2b06398c1f777904f95340c7c2d3023bb89b76cc7fbb117647adf1c69d8cd264",
+    "config\\nasa_model_development.json": "aa948dadb5e4a69a1628782079b30a74c5ce2bd57f95d5fb19fe58c163751329",
+    "data\\processed\\nasa\\B0005_discharge_features.csv": "c63d08a467c8205c30b166cff64b97ffb065439b07eae67cbb0744a28395baa9",
+    "data\\processed\\nasa\\B0006_discharge_features.csv": "dae3332c2c415d2bd84f123fe3a4e1f24db193cd6ce773b86cd164d4cddf5ca6",
+    "data\\processed\\nasa\\B0007_discharge_features.csv": "937c9fd8ec19fe9dc223557034e07f1f57216511a962ecb5233a16b8461152ae",
+    "scripts\\train_nasa_isolation_forest.py": "7a79bf3288fac979f28aaa1d766cc4417536aa5e77b32d50e08a50eda7d491e6",
+    "scripts\\nasa_development.py": "aacce3d70d3b3204c6ed0e0272201fe77043f19ba2183a373560c91d3ea43535",
+    "scripts\\inject_nasa_anomalies.py": "eb0c1416316b68907ddb9432d597c751f4455db48034484a55f783e7d4a14662"
+  },
+  "report_generation_note": "Report-only interpretation added after fitting; original training source hashes retained.",
+  "report_generator_sha256": "de4f4382b0f0ba44ed3e23c518df445d66512b7f2d4f0912e37849ab7c936fb4"
+}

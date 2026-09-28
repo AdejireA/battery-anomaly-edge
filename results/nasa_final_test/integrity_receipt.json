@@ -1,0 +1,82 @@
+{
+  "freeze_preceded_test_access": true,
+  "freeze_receipt": {
+    "stage": "FREEZE_COMPLETE_TEST_DATA_STILL_LOCKED",
+    "utc": "2026-09-19T07:26:35.967298+00:00",
+    "configuration_sha256": "fd4747b45ef8edfae3674fd284209b8df7b2aa4520906ca7ba9799eda46cde21",
+    "model_bundle_sha256": "8801466200c725e5869ab6483a4b2ba2e93418013026c04b366aaa0f20045aee",
+    "test_accesses_before_freeze": []
+  },
+  "test_access_log": [
+    {
+      "path": "data\\processed\\nasa\\B0018_discharge_features.csv",
+      "utc": "2026-09-19T07:27:22.631067+00:00"
+    },
+    {
+      "path": "data\\processed\\nasa\\B0018_discharge_features.csv",
+      "utc": "2026-09-19T07:27:22.702279+00:00"
+    },
+    {
+      "path": "data\\processed\\nasa\\B0018_discharge_features.csv",
+      "utc": "2026-09-19T07:30:52.993705+00:00"
+    }
+  ],
+  "configuration_sha256": "fd4747b45ef8edfae3674fd284209b8df7b2aa4520906ca7ba9799eda46cde21",
+  "before_hashes": {
+    "config/final_nasa_model.json": "fd4747b45ef8edfae3674fd284209b8df7b2aa4520906ca7ba9799eda46cde21",
+    "config/nasa_model_development.json": "aa948dadb5e4a69a1628782079b30a74c5ce2bd57f95d5fb19fe58c163751329",
+    "models/development/relative_features/DEVELOPMENT_RELATIVE_B_k10_trees100_features1.0_seed42.joblib": "8801466200c725e5869ab6483a4b2ba2e93418013026c04b366aaa0f20045aee",
+    "scripts/nasa_burnin.py": "b2f52c01f321adfc4ebfc426a6030f4ecdaeb53002a801bb1e12152683a7ebc1",
+    "data/processed/nasa/B0007_discharge_features.csv": "937c9fd8ec19fe9dc223557034e07f1f57216511a962ecb5233a16b8461152ae",
+    "scripts/train_nasa_isolation_forest.py": "de4f4382b0f0ba44ed3e23c518df445d66512b7f2d4f0912e37849ab7c936fb4",
+    "models/final_nasa/freeze_receipt.json": "ba7fe753bee393eb0219947a0a5d9ff555a97cb6871b44b8c5b85bba1b8798e7",
+    "models/final_nasa/final_nasa_model.sha256": "a78faa4521c4daec4aaa6d556107d5c9b7bed9553b2628bef8cebbccd0b27883",
+    "data/processed/nasa/B0006_discharge_features.csv": "dae3332c2c415d2bd84f123fe3a4e1f24db193cd6ce773b86cd164d4cddf5ca6",
+    "data/processed/nasa/B0005_discharge_features.csv": "c63d08a467c8205c30b166cff64b97ffb065439b07eae67cbb0744a28395baa9",
+    "config/anomaly_injection_protocol.json": "e00a3804aee6fb67f2280f7e2818a618e2d0c48be2a7b2daf6c9d6fefbfff017",
+    "config/nasa_experiment_protocol.json": "2b06398c1f777904f95340c7c2d3023bb89b76cc7fbb117647adf1c69d8cd264",
+    "models/final_nasa/model.joblib": "18ecd3c66d71e89c321570e683c8abdece4aab6d421e4121d4b46003a0f5dd63",
+    "models/final_nasa/scaler.joblib": "ea80b93bc0d1fec25b5c760763f9c95ef859fcae6a67964fe24e4cabf1429f78",
+    "config/nasa_relative_feature_manifest.json": "9c9c5d9d0b76ccbc6962d3e103607bebc4907a5cbac36b92343497de64309d76",
+    "results/nasa_relative_features/thresholds.csv": "13c1b8fa5458c712565a956c9cdd162c07e10c84b20c34f3c2f8a7e81d29ee82",
+    "scripts/build_nasa_relative_features.py": "2793b14adf49aaea146bef1b4277fb0304a9fc8587a17d03b4a00998245a8b4a",
+    "config/nasa_feature_manifest.json": "ae29e5ea2168b9613d826188406cc69666a8ec7d421879145c3d75805e8edb4e",
+    "scripts/finalize_nasa.py": "d928203c2b7763f61e63ef2714025691f34c602a063cd0af5f30e68b7aca0157",
+    "models/final_nasa/model_bundle.joblib": "8801466200c725e5869ab6483a4b2ba2e93418013026c04b366aaa0f20045aee",
+    "models/final_nasa/development_source_table.csv": "89e5055709a79122969ef686cb2509b0d715df558ea18f62b42c3b753142b8d3",
+    "scripts/inject_nasa_anomalies.py": "aa0b64d92eda34315c6b52e2cf4d7426a31472c38918af97a983462f6b63c657"
+  },
+  "after_hashes": {
+    "config/final_nasa_model.json": "fd4747b45ef8edfae3674fd284209b8df7b2aa4520906ca7ba9799eda46cde21",
+    "config/nasa_model_development.json": "aa948dadb5e4a69a1628782079b30a74c5ce2bd57f95d5fb19fe58c163751329",
+    "models/development/relative_features/DEVELOPMENT_RELATIVE_B_k10_trees100_features1.0_seed42.joblib": "8801466200c725e5869ab6483a4b2ba2e93418013026c04b366aaa0f20045aee",
+    "scripts/nasa_burnin.py": "b2f52c01f321adfc4ebfc426a6030f4ecdaeb53002a801bb1e12152683a7ebc1",
+    "data/processed/nasa/B0007_discharge_features.csv": "937c9fd8ec19fe9dc223557034e07f1f57216511a962ecb5233a16b8461152ae",
+    "scripts/train_nasa_isolation_forest.py": "de4f4382b0f0ba44ed3e23c518df445d66512b7f2d4f0912e37849ab7c936fb4",
+    "models/final_nasa/freeze_receipt.json": "ba7fe753bee393eb0219947a0a5d9ff555a97cb6871b44b8c5b85bba1b8798e7",
+    "models/final_nasa/final_nasa_model.sha256": "a78faa4521c4daec4aaa6d556107d5c9b7bed9553b2628bef8cebbccd0b27883",
+    "data/processed/nasa/B0006_discharge_features.csv": "dae3332c2c415d2bd84f123fe3a4e1f24db193cd6ce773b86cd164d4cddf5ca6",
+    "data/processed/nasa/B0005_discharge_features.csv": "c63d08a467c8205c30b166cff64b97ffb065439b07eae67cbb0744a28395baa9",
+    "config/anomaly_injection_protocol.json": "e00a3804aee6fb67f2280f7e2818a618e2d0c48be2a7b2daf6c9d6fefbfff017",
+    "config/nasa_experiment_protocol.json": "2b06398c1f777904f95340c7c2d3023bb89b76cc7fbb117647adf1c69d8cd264",
+    "models/final_nasa/model.joblib": "18ecd3c66d71e89c321570e683c8abdece4aab6d421e4121d4b46003a0f5dd63",
+    "models/final_nasa/scaler.joblib": "ea80b93bc0d1fec25b5c760763f9c95ef859fcae6a67964fe24e4cabf1429f78",
+    "config/nasa_relative_feature_manifest.json": "9c9c5d9d0b76ccbc6962d3e103607bebc4907a5cbac36b92343497de64309d76",
+    "results/nasa_relative_features/thresholds.csv": "13c1b8fa5458c712565a956c9cdd162c07e10c84b20c34f3c2f8a7e81d29ee82",
+    "scripts/build_nasa_relative_features.py": "2793b14adf49aaea146bef1b4277fb0304a9fc8587a17d03b4a00998245a8b4a",
+    "config/nasa_feature_manifest.json": "ae29e5ea2168b9613d826188406cc69666a8ec7d421879145c3d75805e8edb4e",
+    "scripts/finalize_nasa.py": "d928203c2b7763f61e63ef2714025691f34c602a063cd0af5f30e68b7aca0157",
+    "models/final_nasa/model_bundle.joblib": "8801466200c725e5869ab6483a4b2ba2e93418013026c04b366aaa0f20045aee",
+    "models/final_nasa/development_source_table.csv": "89e5055709a79122969ef686cb2509b0d715df558ea18f62b42c3b753142b8d3",
+    "scripts/inject_nasa_anomalies.py": "aa0b64d92eda34315c6b52e2cf4d7426a31472c38918af97a983462f6b63c657"
+  },
+  "all_frozen_artifacts_unchanged": true,
+  "source_table_sha256": "52bdf14d6100b768111e4a74cc80ce04608e2a254271da33c924717f023b8d9b",
+  "source_table": "data/processed/nasa/B0018_discharge_features.csv",
+  "threshold_before": 0.5548682376720724,
+  "threshold_after": 0.5548682376720724,
+  "fitting_blocked": true,
+  "no_test_rows_in_fitting": true,
+  "no_test_metrics_in_selection": true,
+  "completed_utc": "2026-09-19T07:30:53.082326+00:00"
+}

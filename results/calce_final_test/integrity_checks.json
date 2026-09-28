@@ -1,0 +1,52 @@
+{
+  "freeze_receipt_at_utc": "2026-09-20T02:13:19.750825+00:00",
+  "first_test_access_at_utc": "2026-09-20T02:13:20.513911+00:00",
+  "completed_at_utc": "2026-09-20T02:16:19.120470+00:00",
+  "frozen_hashes_before": {
+    "config\\calce_experiment_protocol.json": "ab7ef8ccea50b584f10dfdaf48923a7de15792961bd1c67e22fc5185694637ca",
+    "config\\calce_anomaly_injection_protocol.json": "bea0792fb8e3ec2065458d2873366a4401e8a73d79fd70fb012e678b80068f37",
+    "scripts\\build_calce_relative_features.py": "887464e6767aef2784cd86dcfdc603684fbc13b78c9d46673e980b7fda7a14bb",
+    "scripts\\calce_replication.py": "8e67b1544cbf66f9c98fb008b85eb8a877265f67c78ec6cfb10293f57165d87d",
+    "scripts\\evaluate_final_calce.py": "0a30d1d2c21b4593555f6c68773f70f0864f8f39536d0bca974bd21eca36018d",
+    "data\\processed\\calce\\calce_cs2_relative_features.csv": "e200217ad33a97d164b82d6bfdc541c5dd282b32fb916ea4360b22d90845bdc4",
+    "results\\calce_replication\\thresholds.csv": "67d74bf2410bd29e7d6d4a8f4f73c12187535775a792356342028f758d065c44",
+    "models\\development\\calce_replication\\DEVELOPMENT_CALCE_seed42.joblib": "491ab2d22826574dcbf7cf378596ec908bfc28f253617066de45ae32b61f586e",
+    "data\\processed\\calce\\CS2_35_discharge_features.csv": "1db5751c732a99b48de59c70a1e71bb3532d857a67d782ddc5f6942a32b1f994",
+    "data\\processed\\calce\\CS2_36_discharge_features.csv": "6da7ca30ccd8e0255d7c68f39c84e0534be313adfb99567ac344a689e07bbcb1",
+    "data\\processed\\calce\\CS2_37_discharge_features.csv": "22e8cb819fa61b6172962515fb21f66c84c53cf1b6acb45a83245ee25df08831",
+    "models\\final_calce\\model_bundle.joblib": "491ab2d22826574dcbf7cf378596ec908bfc28f253617066de45ae32b61f586e",
+    "models\\final_calce\\model.joblib": "e9184bd468e00835f3624587f09c5bf23a2ca2f612fba1bdd27fae270e97d31e",
+    "models\\final_calce\\scaler.joblib": "fcf02ec5b7f826799b134a2c4d187ba4090960394a97065e6fd180c4c8ddf9c7",
+    "config\\final_calce_model.json": "571fb85db6aba717bee1c7a1353a9ca20ac1fe9eab578d8f34740a2160bb00fe"
+  },
+  "frozen_hashes_after": {
+    "config\\calce_experiment_protocol.json": "ab7ef8ccea50b584f10dfdaf48923a7de15792961bd1c67e22fc5185694637ca",
+    "config\\calce_anomaly_injection_protocol.json": "bea0792fb8e3ec2065458d2873366a4401e8a73d79fd70fb012e678b80068f37",
+    "scripts\\build_calce_relative_features.py": "887464e6767aef2784cd86dcfdc603684fbc13b78c9d46673e980b7fda7a14bb",
+    "scripts\\calce_replication.py": "8e67b1544cbf66f9c98fb008b85eb8a877265f67c78ec6cfb10293f57165d87d",
+    "scripts\\evaluate_final_calce.py": "0a30d1d2c21b4593555f6c68773f70f0864f8f39536d0bca974bd21eca36018d",
+    "data\\processed\\calce\\calce_cs2_relative_features.csv": "e200217ad33a97d164b82d6bfdc541c5dd282b32fb916ea4360b22d90845bdc4",
+    "results\\calce_replication\\thresholds.csv": "67d74bf2410bd29e7d6d4a8f4f73c12187535775a792356342028f758d065c44",
+    "models\\development\\calce_replication\\DEVELOPMENT_CALCE_seed42.joblib": "491ab2d22826574dcbf7cf378596ec908bfc28f253617066de45ae32b61f586e",
+    "data\\processed\\calce\\CS2_35_discharge_features.csv": "1db5751c732a99b48de59c70a1e71bb3532d857a67d782ddc5f6942a32b1f994",
+    "data\\processed\\calce\\CS2_36_discharge_features.csv": "6da7ca30ccd8e0255d7c68f39c84e0534be313adfb99567ac344a689e07bbcb1",
+    "data\\processed\\calce\\CS2_37_discharge_features.csv": "22e8cb819fa61b6172962515fb21f66c84c53cf1b6acb45a83245ee25df08831",
+    "models\\final_calce\\model_bundle.joblib": "491ab2d22826574dcbf7cf378596ec908bfc28f253617066de45ae32b61f586e",
+    "models\\final_calce\\model.joblib": "e9184bd468e00835f3624587f09c5bf23a2ca2f612fba1bdd27fae270e97d31e",
+    "models\\final_calce\\scaler.joblib": "fcf02ec5b7f826799b134a2c4d187ba4090960394a97065e6fd180c4c8ddf9c7",
+    "config\\final_calce_model.json": "571fb85db6aba717bee1c7a1353a9ca20ac1fe9eab578d8f34740a2160bb00fe"
+  },
+  "nasa_hashes_unchanged": true,
+  "nasa_file_count": 260,
+  "test_source_sha256": "56e6cc910af79012980319518f42442fc7c22bc62716b438f62726459d8e9148",
+  "no_refit": true,
+  "no_retuning": true,
+  "threshold_unchanged": true,
+  "anomaly_protocol_and_magnitudes_unchanged": true,
+  "test_access_only_after_freeze": true,
+  "training_cells": [
+    "CS2-35",
+    "CS2-36"
+  ],
+  "final_configuration_sha256": "571fb85db6aba717bee1c7a1353a9ca20ac1fe9eab578d8f34740a2160bb00fe"
+}

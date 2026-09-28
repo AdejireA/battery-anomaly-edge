@@ -1,0 +1,12 @@
+{
+  "training_cells": ["B0005", "B0006"],
+  "validation_cell": "B0007",
+  "test_cell": "B0018",
+  "nominal_training_fraction": 0.30,
+  "nominal_sensitivity_fractions": [0.20, 0.30, 0.40],
+  "nominal_region_rule": "First floor(fraction * total discharge count) cycles of each training cell, ordered by cycle. Fraction uses the fixed recorded trajectory length, never future feature values or health labels.",
+  "nominal_rounding": "floor",
+  "missing_feature_policy": "Preserve all rows and NaNs at split construction. No imputation or model eligibility filtering yet; capacity_slope_5 is missing for each cell's first four cycles.",
+  "evaluation_policy": "Keep complete validation and test trajectories. Validation supports later design decisions; test remains held out from tuning.",
+  "nominal_interpretation": "Early-life proxy for nominal operation; not a claim that every selected observation is anomaly-free."
+}

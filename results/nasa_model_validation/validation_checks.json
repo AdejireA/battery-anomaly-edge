@@ -1,0 +1,11 @@
+{
+  "clean_development_sources_and_frozen_configs_unchanged": true,
+  "all_44202_copies_preserve_metadata_and_unaffected_fields": true,
+  "all_3114_windows_have_contiguous_cycles_and_correct_labels": true,
+  "all_24_models_scalers_and_thresholds_match_nominal_training_only": true,
+  "no_final_model_or_threshold_selected": true,
+  "seven_nonempty_figures": true,
+  "phase4_tests_passed": 9,
+  "causal_feature_regression_tests_passed": 3,
+  "test_cell_files_opened": 0
+}

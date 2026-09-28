@@ -1,0 +1,91 @@
+{
+  "status": "EXPERIMENTAL_DEVELOPMENT_ONLY",
+  "history_windows": [
+    5,
+    10,
+    20
+  ],
+  "epsilon": 1e-09,
+  "epsilon_definition": "1e-9 in each base feature unit, denominator-only numerical guard; no clipping or scale floor beyond epsilon",
+  "mad_scale": 1.4826,
+  "history_rule": "Exactly k prior cycles from same cell; all k must be finite. Current observation excluded. No imputation.",
+  "base_features": [
+    "capacity_retention",
+    "capacity_slope_5",
+    "duration_s",
+    "time_to_3_4v_s",
+    "mean_voltage_v",
+    "mean_current_a",
+    "mean_temp_c",
+    "max_temp_c",
+    "delta_temp_c"
+  ],
+  "feature_sets": {
+    "5": {
+      "RELATIVE_A": [
+        "capacity_retention_prior5_robust_residual",
+        "capacity_slope_5_prior5_robust_residual",
+        "duration_s_prior5_robust_residual",
+        "time_to_3_4v_s_prior5_robust_residual",
+        "mean_voltage_v_prior5_robust_residual",
+        "mean_temp_c_prior5_robust_residual",
+        "delta_temp_c_prior5_robust_residual"
+      ],
+      "RELATIVE_B": [
+        "duration_s_prior5_robust_residual",
+        "time_to_3_4v_s_prior5_robust_residual",
+        "mean_voltage_v_prior5_robust_residual",
+        "mean_current_a_prior5_robust_residual",
+        "mean_temp_c_prior5_robust_residual",
+        "max_temp_c_prior5_robust_residual",
+        "delta_temp_c_prior5_robust_residual"
+      ]
+    },
+    "10": {
+      "RELATIVE_A": [
+        "capacity_retention_prior10_robust_residual",
+        "capacity_slope_5_prior10_robust_residual",
+        "duration_s_prior10_robust_residual",
+        "time_to_3_4v_s_prior10_robust_residual",
+        "mean_voltage_v_prior10_robust_residual",
+        "mean_temp_c_prior10_robust_residual",
+        "delta_temp_c_prior10_robust_residual"
+      ],
+      "RELATIVE_B": [
+        "duration_s_prior10_robust_residual",
+        "time_to_3_4v_s_prior10_robust_residual",
+        "mean_voltage_v_prior10_robust_residual",
+        "mean_current_a_prior10_robust_residual",
+        "mean_temp_c_prior10_robust_residual",
+        "max_temp_c_prior10_robust_residual",
+        "delta_temp_c_prior10_robust_residual"
+      ]
+    },
+    "20": {
+      "RELATIVE_A": [
+        "capacity_retention_prior20_robust_residual",
+        "capacity_slope_5_prior20_robust_residual",
+        "duration_s_prior20_robust_residual",
+        "time_to_3_4v_s_prior20_robust_residual",
+        "mean_voltage_v_prior20_robust_residual",
+        "mean_temp_c_prior20_robust_residual",
+        "delta_temp_c_prior20_robust_residual"
+      ],
+      "RELATIVE_B": [
+        "duration_s_prior20_robust_residual",
+        "time_to_3_4v_s_prior20_robust_residual",
+        "mean_voltage_v_prior20_robust_residual",
+        "mean_current_a_prior20_robust_residual",
+        "mean_temp_c_prior20_robust_residual",
+        "max_temp_c_prior20_robust_residual",
+        "delta_temp_c_prior20_robust_residual"
+      ]
+    }
+  },
+  "names": {
+    "RELATIVE_A": "trajectory_degradation_aware",
+    "RELATIVE_B": "trajectory_measurement_oriented"
+  },
+  "slope_choice": "Use robust residual of capacity_slope_5 in RELATIVE_A; unstandardized causal slope-change also retained for diagnostics.",
+  "selection": "Clean B0007 FPR <=0.05 for every fixed seed; no synthetic criterion. No automatic finalization."
+}

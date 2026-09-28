@@ -1,0 +1,11 @@
+{
+  "tests_passed": 7,
+  "figures_verified": [
+    "figures\\calce\\final_test\\cs2_38_A2_severity.png",
+    "figures\\calce\\final_test\\cs2_38_A4_severity.png",
+    "figures\\calce\\final_test\\cs2_38_anomaly_score_distributions.png",
+    "figures\\calce\\final_test\\cs2_38_clean_score_vs_cycle.png"
+  ],
+  "nasa_hashes_unchanged": 260,
+  "no_retuning": true
+}

@@ -1,0 +1,72 @@
+{
+  "label": "Raspberry-Pi-3B+",
+  "timestamp_utc": "2026-09-20T12:55:38.748813+00:00",
+  "platform": "Linux-6.18.50+rpt-rpi-v8-aarch64-with-glibc2.41",
+  "machine": "aarch64",
+  "processor": "",
+  "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+  "logical_cpus": 4,
+  "dependencies": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0"
+  },
+  "repeats": 1000,
+  "warmup": 100,
+  "distinct_playback_contexts": 122,
+  "cold_load_seconds": 11.537622262,
+  "cold_process_startup_seconds": 13.189013051000003,
+  "cold_definition": "Fresh subprocess; load includes hash checks, sklearn imports and deserialization. OS disk cache is not flushed. Full startup additionally includes interpreter and base imports.",
+  "feature_computation": {
+    "mean_ms": 0.7758320330004551,
+    "median_ms": 0.7604219999990391,
+    "std_ms": 0.036961294874698916,
+    "p95_ms": 0.8453275000107396,
+    "p99_ms": 0.9113378000105854,
+    "min_ms": 0.7377710000184834,
+    "max_ms": 1.0425789999999324
+  },
+  "model_inference": {
+    "mean_ms": 63.17185397600022,
+    "median_ms": 62.997543499989206,
+    "std_ms": 1.0104672272674229,
+    "p95_ms": 64.16504035002077,
+    "p99_ms": 65.98113876998099,
+    "min_ms": 62.15728099999751,
+    "max_ms": 87.86976100000743
+  },
+  "combined": {
+    "mean_ms": 63.94768600900068,
+    "median_ms": 63.77351650000662,
+    "std_ms": 1.0097279923626639,
+    "p95_ms": 64.94143740000169,
+    "p99_ms": 66.84775706001261,
+    "min_ms": 62.917402000010725,
+    "max_ms": 88.62633400002551
+  },
+  "wall_seconds": 63.958072413,
+  "throughput_observations_per_second": 15.635242937633341,
+  "cpu_percent_one_core": 99.9404728573523,
+  "memory_before": {
+    "rss_bytes": 129765376,
+    "peak_rss_bytes": 129392640,
+    "method": "psutil; Linux ru_maxrss/proc"
+  },
+  "memory_after": {
+    "rss_bytes": 130093056,
+    "peak_rss_bytes": 129785856,
+    "method": "psutil; Linux ru_maxrss/proc"
+  },
+  "artifact_sizes_bytes": {
+    "final_nasa_model.json": 12628,
+    "scaler.joblib": 1295,
+    "artifact_hashes.json": 859,
+    "nasa_relative_feature_manifest.json": 3381,
+    "model.joblib": 491357,
+    "final_nasa_model.sha256": 96
+  },
+  "timing_scope": "One observation at a time; feature arithmetic, scaler.transform, score_samples and threshold comparison. CSV I/O/context preparation excluded. Repeat isolated pre-recorded histories; do not feed replayed observations into a continuing live history.",
+  "power_consumption": "Not measured",
+  "no_training": true
+}

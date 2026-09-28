@@ -1,0 +1,8 @@
+{
+  "final_safety_tests_passed": 8,
+  "pre_freeze_relative_regression_tests_passed": 8,
+  "verified_figures": 5,
+  "protected_hashes_unchanged": 22,
+  "configuration_sha256": "fd4747b45ef8edfae3674fd284209b8df7b2aa4520906ca7ba9799eda46cde21",
+  "no_post_test_retuning": true
+}

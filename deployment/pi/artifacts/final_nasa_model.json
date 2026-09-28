@@ -1,0 +1,495 @@
+{
+  "version": "1.0",
+  "status": "FROZEN_FINAL_NASA_CONFIGURATION",
+  "frozen_at_utc": "2026-09-19T07:26:35.849512+00:00",
+  "feature_set": "RELATIVE_B",
+  "representation": "trajectory_measurement_oriented",
+  "history_window": 10,
+  "features": [
+    "duration_s_prior10_robust_residual",
+    "time_to_3_4v_s_prior10_robust_residual",
+    "mean_voltage_v_prior10_robust_residual",
+    "mean_current_a_prior10_robust_residual",
+    "mean_temp_c_prior10_robust_residual",
+    "max_temp_c_prior10_robust_residual",
+    "delta_temp_c_prior10_robust_residual"
+  ],
+  "model_family": "IsolationForest",
+  "hyperparameters": {
+    "n_estimators": 100,
+    "max_features": 1.0,
+    "max_samples": "auto",
+    "contamination": "auto",
+    "random_state": 42
+  },
+  "random_seed": 42,
+  "training_cells": [
+    "B0005",
+    "B0006"
+  ],
+  "nominal_fraction": 0.3,
+  "nominal_cycles_per_training_cell": 50,
+  "effective_training_rows": 80,
+  "scaler_provenance": {
+    "status": "DEVELOPMENT_ONLY",
+    "feature_set": "RELATIVE_B",
+    "history_window": 10,
+    "training_rows": 80,
+    "training_ids": [
+      {
+        "cell_id": "B0005",
+        "cycle": 11
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 12
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 13
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 14
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 15
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 16
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 17
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 18
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 19
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 20
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 21
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 22
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 23
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 24
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 25
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 26
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 27
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 28
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 29
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 30
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 31
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 32
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 33
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 34
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 35
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 36
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 37
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 38
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 39
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 40
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 41
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 42
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 43
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 44
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 45
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 46
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 47
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 48
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 49
+      },
+      {
+        "cell_id": "B0005",
+        "cycle": 50
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 11
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 12
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 13
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 14
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 15
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 16
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 17
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 18
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 19
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 20
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 21
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 22
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 23
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 24
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 25
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 26
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 27
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 28
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 29
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 30
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 31
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 32
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 33
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 34
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 35
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 36
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 37
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 38
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 39
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 40
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 41
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 42
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 43
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 44
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 45
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 46
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 47
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 48
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 49
+      },
+      {
+        "cell_id": "B0006",
+        "cycle": 50
+      }
+    ],
+    "training_sha256": "26ddc9b8a2ac401ab4ed0b0aa34a94128365dc846be5ae2ff8a0c7d71104e4e5",
+    "scaler_mean": [
+      -0.9692110211597645,
+      -0.7445395572832927,
+      -0.4510359978051647,
+      1.7752780562154258,
+      -0.28181615940021837,
+      -0.7104582059345247,
+      0.44691459616367996
+    ],
+    "scaler_var": [
+      1.6694125059333764,
+      4.18331554004015,
+      3.112530391322509,
+      81.04228475759678,
+      5.509670732399295,
+      17.80851328253065,
+      5.435054000357577
+    ],
+    "scaler_scale": [
+      1.2920574700582697,
+      2.0453155111229537,
+      1.7642364896244804,
+      9.002348846695332,
+      2.3472687814562896,
+      4.220013422079443,
+      2.331320226900967
+    ],
+    "n_estimators": 100,
+    "max_features": 1.0,
+    "seed": 42,
+    "features": [
+      "duration_s_prior10_robust_residual",
+      "time_to_3_4v_s_prior10_robust_residual",
+      "mean_voltage_v_prior10_robust_residual",
+      "mean_current_a_prior10_robust_residual",
+      "mean_temp_c_prior10_robust_residual",
+      "max_temp_c_prior10_robust_residual",
+      "delta_temp_c_prior10_robust_residual"
+    ]
+  },
+  "threshold_percentile": 95.0,
+  "threshold_value": 0.5548682376720724,
+  "threshold_source": "Seed-42 in-sample clean nominal B0005/B0006 scores; exact saved Phase 4C value",
+  "score_convention": "-IsolationForest.score_samples(StandardScaler.transform(X)); higher is more anomalous; flag score > threshold",
+  "selection_rationale": "User-fixed predeclared reporting reference, not best synthetic result. First of P95/P97.5/P99 meeting clean B0007 FPR <=5% for ALL seeds 42/123/2026. No synthetic metrics used.",
+  "development_clean_fpr_evidence": [
+    {
+      "seed": 42,
+      "percentile": 95.0,
+      "threshold": 0.5548682376720724,
+      "clean_fpr": 0.0189873417721519
+    },
+    {
+      "seed": 42,
+      "percentile": 97.5,
+      "threshold": 0.5897900944184286,
+      "clean_fpr": 0.0189873417721519
+    },
+    {
+      "seed": 42,
+      "percentile": 99.0,
+      "threshold": 0.6260989696377472,
+      "clean_fpr": 0.006329113924050633
+    },
+    {
+      "seed": 123,
+      "percentile": 95.0,
+      "threshold": 0.5371306863855698,
+      "clean_fpr": 0.0379746835443038
+    },
+    {
+      "seed": 123,
+      "percentile": 97.5,
+      "threshold": 0.600432171751242,
+      "clean_fpr": 0.0189873417721519
+    },
+    {
+      "seed": 123,
+      "percentile": 99.0,
+      "threshold": 0.6102161996771595,
+      "clean_fpr": 0.006329113924050633
+    },
+    {
+      "seed": 2026,
+      "percentile": 95.0,
+      "threshold": 0.5517826831889318,
+      "clean_fpr": 0.0189873417721519
+    },
+    {
+      "seed": 2026,
+      "percentile": 97.5,
+      "threshold": 0.5884630705672544,
+      "clean_fpr": 0.012658227848101266
+    },
+    {
+      "seed": 2026,
+      "percentile": 99.0,
+      "threshold": 0.6290703147185265,
+      "clean_fpr": 0.0
+    }
+  ],
+  "anomaly_protocol_version": "1.0",
+  "source_table_scope": "Development-only B0005/B0006/B0007 snapshot; combined NASA table contains locked test data and is deliberately not opened before freeze. Test source hash will be recorded in a separate post-freeze receipt.",
+  "clean_temporal_statistics_rule": "Split chronologically ordered usable cycles into three nearly equal contiguous parts with numpy.array_split",
+  "synthetic_evaluation_rule": "Frozen A2/A3 five-cycle and A4 ten-cycle windows at every valid onset after 10 prior cycles; both A4 signs/channels; independent scenario histories; exclude zero-offset onset from positive class; preserve physical guards; class-balanced 50% evaluation prevalence",
+  "hashes": {
+    "config/nasa_relative_feature_manifest.json": "9c9c5d9d0b76ccbc6962d3e103607bebc4907a5cbac36b92343497de64309d76",
+    "config/nasa_feature_manifest.json": "ae29e5ea2168b9613d826188406cc69666a8ec7d421879145c3d75805e8edb4e",
+    "config/nasa_experiment_protocol.json": "2b06398c1f777904f95340c7c2d3023bb89b76cc7fbb117647adf1c69d8cd264",
+    "config/anomaly_injection_protocol.json": "e00a3804aee6fb67f2280f7e2818a618e2d0c48be2a7b2daf6c9d6fefbfff017",
+    "config/nasa_model_development.json": "aa948dadb5e4a69a1628782079b30a74c5ce2bd57f95d5fb19fe58c163751329",
+    "results/nasa_relative_features/thresholds.csv": "13c1b8fa5458c712565a956c9cdd162c07e10c84b20c34f3c2f8a7e81d29ee82",
+    "models/development/relative_features/DEVELOPMENT_RELATIVE_B_k10_trees100_features1.0_seed42.joblib": "8801466200c725e5869ab6483a4b2ba2e93418013026c04b366aaa0f20045aee",
+    "models/final_nasa/model_bundle.joblib": "8801466200c725e5869ab6483a4b2ba2e93418013026c04b366aaa0f20045aee",
+    "models/final_nasa/scaler.joblib": "ea80b93bc0d1fec25b5c760763f9c95ef859fcae6a67964fe24e4cabf1429f78",
+    "models/final_nasa/model.joblib": "18ecd3c66d71e89c321570e683c8abdece4aab6d421e4121d4b46003a0f5dd63",
+    "models/final_nasa/development_source_table.csv": "89e5055709a79122969ef686cb2509b0d715df558ea18f62b42c3b753142b8d3",
+    "data/processed/nasa/B0005_discharge_features.csv": "c63d08a467c8205c30b166cff64b97ffb065439b07eae67cbb0744a28395baa9",
+    "data/processed/nasa/B0006_discharge_features.csv": "dae3332c2c415d2bd84f123fe3a4e1f24db193cd6ce773b86cd164d4cddf5ca6",
+    "data/processed/nasa/B0007_discharge_features.csv": "937c9fd8ec19fe9dc223557034e07f1f57216511a962ecb5233a16b8461152ae",
+    "scripts/build_nasa_relative_features.py": "2793b14adf49aaea146bef1b4277fb0304a9fc8587a17d03b4a00998245a8b4a",
+    "scripts/inject_nasa_anomalies.py": "aa0b64d92eda34315c6b52e2cf4d7426a31472c38918af97a983462f6b63c657",
+    "scripts/finalize_nasa.py": "d928203c2b7763f61e63ef2714025691f34c602a063cd0af5f30e68b7aca0157",
+    "scripts/train_nasa_isolation_forest.py": "de4f4382b0f0ba44ed3e23c518df445d66512b7f2d4f0912e37849ab7c936fb4",
+    "scripts/nasa_burnin.py": "b2f52c01f321adfc4ebfc426a6030f4ecdaeb53002a801bb1e12152683a7ebc1"
+  },
+  "software_versions": {
+    "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "sklearn": "1.9.1"
+  },
+  "configuration_hash_rule": "configuration_payload_sha256 hashes canonical sorted compact JSON excluding that field. Detached final_nasa_model.sha256 hashes the complete file bytes.",
+  "configuration_payload_sha256": "21e03d3edd7f7288d6a8dd065728241ffed2458865b14e1ff4bcc8896534cafe"
+}

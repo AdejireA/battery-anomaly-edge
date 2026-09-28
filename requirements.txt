@@ -1,0 +1,10 @@
+# Public repository Python dependencies.
+# Note: numpy>=2.0.0 is required because scripts/extract_calce_cs2_35.py uses np.trapezoid (introduced in NumPy 2.0.0).
+# This specification defines minimum source compatibility; it does not claim to reproduce historical frozen environments exactly.
+numpy>=2.0.0
+scipy>=1.9
+pandas>=1.5
+matplotlib>=3.6
+scikit-learn>=1.3
+joblib>=1.3
+psutil>=5.9

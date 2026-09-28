@@ -1,0 +1,66 @@
+[
+  {
+    "feature_set": "degradation_aware",
+    "n_estimators": 100,
+    "max_features": 0.75,
+    "recommended_percentile_for_review": null,
+    "final_threshold": null,
+    "status": "no_candidate_meets_clean_fpr_tolerance"
+  },
+  {
+    "feature_set": "degradation_aware",
+    "n_estimators": 100,
+    "max_features": 1.0,
+    "recommended_percentile_for_review": null,
+    "final_threshold": null,
+    "status": "no_candidate_meets_clean_fpr_tolerance"
+  },
+  {
+    "feature_set": "degradation_aware",
+    "n_estimators": 200,
+    "max_features": 0.75,
+    "recommended_percentile_for_review": null,
+    "final_threshold": null,
+    "status": "no_candidate_meets_clean_fpr_tolerance"
+  },
+  {
+    "feature_set": "degradation_aware",
+    "n_estimators": 200,
+    "max_features": 1.0,
+    "recommended_percentile_for_review": null,
+    "final_threshold": null,
+    "status": "no_candidate_meets_clean_fpr_tolerance"
+  },
+  {
+    "feature_set": "measurement_oriented",
+    "n_estimators": 100,
+    "max_features": 0.75,
+    "recommended_percentile_for_review": null,
+    "final_threshold": null,
+    "status": "no_candidate_meets_clean_fpr_tolerance"
+  },
+  {
+    "feature_set": "measurement_oriented",
+    "n_estimators": 100,
+    "max_features": 1.0,
+    "recommended_percentile_for_review": null,
+    "final_threshold": null,
+    "status": "no_candidate_meets_clean_fpr_tolerance"
+  },
+  {
+    "feature_set": "measurement_oriented",
+    "n_estimators": 200,
+    "max_features": 0.75,
+    "recommended_percentile_for_review": null,
+    "final_threshold": null,
+    "status": "no_candidate_meets_clean_fpr_tolerance"
+  },
+  {
+    "feature_set": "measurement_oriented",
+    "n_estimators": 200,
+    "max_features": 1.0,
+    "recommended_percentile_for_review": null,
+    "final_threshold": null,
+    "status": "no_candidate_meets_clean_fpr_tolerance"
+  }
+]

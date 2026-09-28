@@ -1,0 +1,10 @@
+{
+  "burnin_tests_passed": 7,
+  "threshold_rows": 216,
+  "reviewed_configurations": 72,
+  "eligible_configurations": 0,
+  "calibration_evaluation_disjoint": true,
+  "models_scalers_not_refit": true,
+  "protected_hashes_unchanged": true,
+  "held_out_files_accessed": 0
+}

@@ -1,0 +1,22 @@
+{
+  "model.joblib": {
+    "source": "models/final_nasa/model.joblib",
+    "sha256": "18ecd3c66d71e89c321570e683c8abdece4aab6d421e4121d4b46003a0f5dd63"
+  },
+  "scaler.joblib": {
+    "source": "models/final_nasa/scaler.joblib",
+    "sha256": "ea80b93bc0d1fec25b5c760763f9c95ef859fcae6a67964fe24e4cabf1429f78"
+  },
+  "final_nasa_model.json": {
+    "source": "config/final_nasa_model.json",
+    "sha256": "fd4747b45ef8edfae3674fd284209b8df7b2aa4520906ca7ba9799eda46cde21"
+  },
+  "nasa_relative_feature_manifest.json": {
+    "source": "config/nasa_relative_feature_manifest.json",
+    "sha256": "9c9c5d9d0b76ccbc6962d3e103607bebc4907a5cbac36b92343497de64309d76"
+  },
+  "final_nasa_model.sha256": {
+    "source": "models/final_nasa/final_nasa_model.sha256",
+    "sha256": "a78faa4521c4daec4aaa6d556107d5c9b7bed9553b2628bef8cebbccd0b27883"
+  }
+}
