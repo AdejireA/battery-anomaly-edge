@@ -115,7 +115,7 @@ Modified tracked files (7):
 - `docs/reproducibility.md`
 - `requirements.txt`
 
-Raw NASA/CALCE files, source-derived processed/sample tables, development grids, other figures, virtual environments, caches, internal reports and unrelated experiments were deliberately excluded. Ignored `tmp/` validation logs/scripts and `output/` synthetic/preparation outputs remain local only. Citation metadata still identifies the published v0.1.0; v0.2 has not been released.
+Raw NASA/CALCE files, source-derived processed/sample tables, development grids, other figures, virtual environments, caches, internal reports and unrelated experiments were deliberately excluded. Ignored `tmp/` validation logs/scripts and `output/` synthetic/preparation outputs remain local only. At the time of this validation, citation metadata still identified the published v0.1.0 and v0.2 had not yet been released. The validated upgrade was subsequently prepared for release as v0.2.0.
 
 Remaining limits: full external-data reproduction and a new physical Pi run were not executed; fresh environment installation was not tested; archive-wide tests require omitted artifacts; original CALCE Python/joblib serialization versions and formal figure-publication placement are incompletely documented. These do not block the scoped Tier-B package, but the repository must not be described as a fully tested one-command reproduction of every historical experiment.
 
@@ -139,4 +139,4 @@ Remaining limits: full external-data reproduction and a new physical Pi run were
 - [ ] Three-level reproduction workflow and external-data prerequisites.
 - [ ] Historical versus tested environment versions and optional Pi dependencies.
 - [ ] Public-data/privacy boundaries, ignored internal files and scan scope.
-- [ ] README quick start, limitations and unreleased v0.2 status.
+- [x] README quick start, limitations and v0.2.0 release status.

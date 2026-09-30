@@ -107,7 +107,7 @@ Preserving negative findings is central to this research:
 
 ## Reproducibility and quick start
 
-The v0.2 working tree packages final frozen NASA/CALCE estimators, scalers and bundles, six selected research figures, a SHA-256 manifest and a deterministic synthetic demo. External datasets are needed only for full experiment reproduction.
+The v0.2.0 release packages final frozen NASA/CALCE estimators, scalers and bundles, six selected research figures, a SHA-256 manifest and a deterministic synthetic demo. External datasets are needed only for full experiment reproduction.
 
 With Python 3.14.6 in an activated environment, run from the repository root:
 
@@ -172,7 +172,7 @@ AI-assisted coding tools were used during research script development and public
 
 ## Release and license
 
-The published version is **0.1.0**; this working tree prepares the **v0.2 reproducibility upgrade** with selected figures and frozen models. No new release has been published, and citation metadata still identifies v0.1.0. This is research software, not a peer-reviewed publication. Raw datasets and source-derived measurement tables remain excluded. The [MIT license](LICENSE) applies to original repository code/material owned by Adejire Adegite; it does not relicense NASA data, CALCE data or third-party materials. See [CITATION.cff](CITATION.cff) for citation metadata.
+The current release is **v0.2.0**, which adds selected research figures, final frozen NASA/CALCE model artifacts, artifact verification, a deterministic synthetic demo, and a documented reproduction workflow. This is research software, not a peer-reviewed publication. Raw datasets and source-derived measurement tables remain excluded. The [MIT license](LICENSE) applies to original repository code/material owned by Adejire Adegite; it does not relicense NASA data, CALCE data or third-party materials. See [CITATION.cff](CITATION.cff) for citation metadata.
 
 ## Evidence notes
 
