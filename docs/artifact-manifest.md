@@ -2,7 +2,7 @@
 
 ## Overview and Publication Model
 
-This repository follows a **source + compact evidence** publication model. The public tree contains:
+This repository now follows a **source + compact evidence + selected frozen artifacts** publication model. The v0.2 [machine-readable inventory](../artifacts/manifest.json) hashes every released model, selected figure and compact evidence file; [artifact notes](../artifacts/README.md) explain provenance. The historical inventory below remains unchanged. The public tree contains:
 1. complete research implementation scripts and test modules;
 2. immutable scientific configuration files;
 3. compact aggregate evidence files (evaluation metrics, threshold summaries, seed stability tables, denominator diagnostics, and distribution summaries);
@@ -10,13 +10,13 @@ This repository follows a **source + compact evidence** publication model. The p
 5. sanitized derivatives of internal historical research reports;
 6. physical Raspberry Pi 3B+ replay benchmark results, playback validation, execution environment record, and deployment implementation.
 
-The repository deliberately omits raw datasets, detailed per-cycle observation tables, per-observation score files, and serialized model binaries (`.joblib`).
+The repository deliberately omits raw datasets, detailed per-cycle observation tables, per-observation score files, and development-model collections. Final frozen model binaries and six selected figures are included in v0.2.
 
 ### Historical Receipts and Absent Dependencies
 
 Historical freeze and integrity receipts (such as `models/final_nasa/freeze_receipt.json`, `models/final_calce/freeze_receipt.json`, `results/nasa_final_test/integrity_receipt.json`, and `deployment/pi/results/research_hashes_before.json`) are preserved as immutable historical scientific evidence.
 
-These receipts were generated during experimental execution and record cryptographic hashes of the research environment as it existed at execution time. Some dependencies recorded in these receipts—such as raw dataset files, processed per-cycle observation tables (`data/processed/`), development-model exploration grids, and serialized `.joblib` binaries—remain exclusively in the private research archive.
+These receipts were generated during experimental execution and record cryptographic hashes of the research environment as it existed at execution time. Some dependencies recorded in these receipts—such as raw dataset files, processed per-cycle observation tables (`data/processed/`), development-model exploration grids, and development `.joblib` binaries—remain exclusively in the private research archive.
 
 The receipts have **NOT** been rewritten or truncated to make them artificially describe the smaller public subset. The absence of those omitted dependencies from this Git repository reflects an intentional publication boundary and does not indicate that the historical receipts were incomplete when created. The public repository does not claim to independently satisfy every historical archive-wide hash verification without external datasets.
 

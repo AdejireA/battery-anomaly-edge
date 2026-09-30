@@ -105,36 +105,48 @@ Preserving negative findings is central to this research:
 2. **Burn-in threshold calibration failure:** Early B0007 threshold calibration failed the later-trajectory clean-FPR gate across all configuration groups; synthetic sensitivity was not evaluated after that failed gate.
 3. **Weak gradual sensor drift sensitivity:** Causal sliding-window baselines adapt to slow measurement drift, resulting in detection recall under $5\%$ for gradual drift anomalies.
 
+## Reproducibility and quick start
+
+The v0.2 working tree packages final frozen NASA/CALCE estimators, scalers and bundles, six selected research figures, a SHA-256 manifest and a deterministic synthetic demo. External datasets are needed only for full experiment reproduction.
+
+With Python 3.14.6 in an activated environment, run from the repository root:
+
+```bash
+python -m pip install -r requirements-lock.txt
+python -B demo/run_demo.py
+python -B scripts/verify_artifacts.py --load-models
+python -B -m unittest tests.test_calce_cs2_35_extraction tests.test_nasa_causal_features tests.test_v02_reproducibility -v
+```
+
+The demo generates its own observations and fits a separate synthetic model. It shows ten prior-cycle warmup rows, history-relative features, scaling, scoring and thresholded predictions; it does not reproduce the reported FPRs. See [demo details](demo/README.md).
+
+- **Level 1:** Run the synthetic demo without NASA/CALCE data.
+- **Level 2:** Inspect and verify [released artifacts](artifacts/README.md), [model/figure/evidence hashes](artifacts/manifest.json) and compact results.
+- **Level 3:** Independently obtain the source datasets, preprocess, validate, freeze and evaluate in an isolated run directory.
+
+Follow [docs/reproduction.md](docs/reproduction.md) for the environment, exact cell roles, full workflow, edge replay and limitations. [Validation results](docs/v02-validation.md) distinguish self-contained tests from research tests requiring omitted inputs. Historical receipts remain unchanged and still reference archive-only dependencies. Joblib files can execute code when loaded: use trusted sources and verify hashes before deserialization.
+
+## Selected research figures
+
+![Clean final NASA B0018 scores and frozen threshold](artifacts/figures/nasa/final_test/b0018_clean_score_vs_cycle.png)
+
+NASA B0018 final test, clean evaluation: 5 of 122 scorable cycles exceed the frozen threshold (4.10%).
+
+![B0018 synthetic anomaly score distributions](artifacts/figures/nasa/final_test/b0018_anomaly_score_distributions.png)
+
+B0018 final synthetic evaluation: A2/A3 severity changes score distributions, while A4 remains weak at the frozen threshold. These are synthetic evaluation labels, not observed faults. The [manifest](artifacts/manifest.json) also inventories clean CALCE final scores, B0007 validation comparisons and A4 severity results with provenance and interpretation.
+
 ## Repository structure
 
-```
-battery-anomaly-edge/
-├── config/                  # Experiment specifications and feature definitions
-├── deployment/
-│   └── pi/                  # Edge packaging, inference script, and benchmark runner
-│       ├── artifacts/       # Architecture receipts and feature metadata (models omitted)
-│       └── results/         # Hardware benchmark and playback validation receipts
-├── docs/                    # Research documentation, workflow maps, and data acquisition
-│   ├── artifact-manifest.md # Public artifact integrity manifest
-│   ├── data-acquisition.md  # Guidance on obtaining external NASA and CALCE data
-│   ├── model-card.md        # Technical research model card
-│   ├── reproducibility.md   # Reproducibility tiers and test classifications
-│   ├── research-process.md  # Narrative of research progression and design decisions
-│   └── workflow.md          # Pipeline stages mapped to scripts and configs
-├── results/                 # Compact executed results and sanitized historical reports
-├── scripts/                 # Source extraction, training, validation, and diagnostic scripts
-├── tests/                   # Test modules (public-safe and data-dependent)
-├── pytest.ini               # Pytest configuration and marker declarations
-└── requirements.txt         # Root Python dependencies (numpy>=2.0.0)
-```
-
-## Reproducibility
-
-This repository provides three levels of reproducibility:
-
-- **Level 1 (Direct Inspection):** All frozen metric summaries, threshold tables, execution receipts, and benchmark logs are committed under `results/` and `deployment/pi/results/`. See [docs/artifact-manifest.md](docs/artifact-manifest.md).
-- **Level 2 (Pipeline Execution):** Source scripts allow reprocessing raw laboratory datasets into features and training new models. External datasets must be downloaded independently. See [docs/data-acquisition.md](docs/data-acquisition.md) and [docs/reproducibility.md](docs/reproducibility.md).
-- **Level 3 (Historical Binary Verification):** Serialized `.joblib` model artifacts and raw cycle tables are retained in archival storage and excluded from this public release. Exact bitwise historical hash verification requires archival assets.
+| Path | Contents |
+|---|---|
+| `artifacts/` | Release manifest and six selected figures |
+| `models/final_nasa/`, `models/final_calce/` | Exact final estimator, scaler, bundle and historical freeze receipts |
+| `demo/` | Synthetic-only runnable mechanics demonstration |
+| `config/`, `results/` | Frozen definitions and compact research evidence |
+| `deployment/pi/` | Frozen NASA runtime, duplicate runtime binaries and hardware evidence |
+| `scripts/`, `tests/` | Research pipeline, artifact verifier, isolated-run preparation and tests |
+| `docs/` | Reproduction, data acquisition, scientific scope and validation records |
 
 ## Limitations
 
@@ -160,7 +172,7 @@ AI-assisted coding tools were used during research script development and public
 
 ## Release and license
 
-Version **0.1.0** is a research software/artifact release, not a peer-reviewed publication. Figures, datasets and serialized models are excluded from v1. The [MIT license](LICENSE) applies to original repository code/material owned by Adejire Adegite; it does not relicense NASA data, CALCE data or third-party materials. See [CITATION.cff](CITATION.cff) for citation metadata.
+The published version is **0.1.0**; this working tree prepares the **v0.2 reproducibility upgrade** with selected figures and frozen models. No new release has been published, and citation metadata still identifies v0.1.0. This is research software, not a peer-reviewed publication. Raw datasets and source-derived measurement tables remain excluded. The [MIT license](LICENSE) applies to original repository code/material owned by Adejire Adegite; it does not relicense NASA data, CALCE data or third-party materials. See [CITATION.cff](CITATION.cff) for citation metadata.
 
 ## Evidence notes
 

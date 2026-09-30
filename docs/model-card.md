@@ -104,7 +104,7 @@ An alarm is flagged if $\text{Score}(z_t) > \text{Threshold}$.
 
 ## Artifact availability
 
-Serialized model binaries (`.joblib`) are excluded from the initial public release. Users reproducing this work must train fresh models from raw data following [docs/reproducibility.md](reproducibility.md).
+Final frozen model binaries (`.joblib`) are released in v0.2; see the [manifest](../artifacts/manifest.json) and [reproduction guide](reproduction.md). Development model collections remain excluded. Load only trusted joblib files after hash verification; deserialization can execute code.
 
 ## Interpretation and sources
 

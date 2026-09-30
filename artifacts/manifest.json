@@ -1,0 +1,913 @@
+{
+  "version": "0.2",
+  "scope": "Released scientific subset; historical receipts retain omitted dependencies.",
+  "models": [
+    {
+      "path": "models/final_nasa/model.joblib",
+      "size_bytes": 491357,
+      "sha256": "18ecd3c66d71e89c321570e683c8abdece4aab6d421e4121d4b46003a0f5dd63",
+      "kind": "estimator",
+      "dataset": "NASA",
+      "purpose": "Frozen final estimator",
+      "source": "models/final_nasa/model.joblib",
+      "provenance": "config/final_nasa_model.json; models/final_nasa/freeze_receipt.json",
+      "training_cells": [
+        "B0005",
+        "B0006"
+      ],
+      "validation_cells": [
+        "B0007"
+      ],
+      "test_cells": [
+        "B0018"
+      ],
+      "feature_family": "RELATIVE_B",
+      "features": [
+        "duration_s_prior10_robust_residual",
+        "time_to_3_4v_s_prior10_robust_residual",
+        "mean_voltage_v_prior10_robust_residual",
+        "mean_current_a_prior10_robust_residual",
+        "mean_temp_c_prior10_robust_residual",
+        "max_temp_c_prior10_robust_residual",
+        "delta_temp_c_prior10_robust_residual"
+      ],
+      "history_length": 10,
+      "threshold_percentile": 95,
+      "threshold": 0.5548682376720724,
+      "seed": 42,
+      "configuration": "config/final_nasa_model.json",
+      "serialization": "joblib / pickle",
+      "sklearn_version": "1.9.1",
+      "python_version": "3.14.6 (NASA freeze record)",
+      "inspection": "Fitted estimator/scaler state and, in bundles, identifiers and aggregate provenance; no training matrices, credentials or absolute local paths found.",
+      "tested_python_version": "3.14.6",
+      "joblib_serialization_version": "unknown at original serialization; 1.6.0 tested for loading"
+    },
+    {
+      "path": "models/final_nasa/scaler.joblib",
+      "size_bytes": 1295,
+      "sha256": "ea80b93bc0d1fec25b5c760763f9c95ef859fcae6a67964fe24e4cabf1429f78",
+      "kind": "scaler",
+      "dataset": "NASA",
+      "purpose": "Frozen final scaler",
+      "source": "models/final_nasa/scaler.joblib",
+      "provenance": "config/final_nasa_model.json; models/final_nasa/freeze_receipt.json",
+      "training_cells": [
+        "B0005",
+        "B0006"
+      ],
+      "validation_cells": [
+        "B0007"
+      ],
+      "test_cells": [
+        "B0018"
+      ],
+      "feature_family": "RELATIVE_B",
+      "features": [
+        "duration_s_prior10_robust_residual",
+        "time_to_3_4v_s_prior10_robust_residual",
+        "mean_voltage_v_prior10_robust_residual",
+        "mean_current_a_prior10_robust_residual",
+        "mean_temp_c_prior10_robust_residual",
+        "max_temp_c_prior10_robust_residual",
+        "delta_temp_c_prior10_robust_residual"
+      ],
+      "history_length": 10,
+      "threshold_percentile": 95,
+      "threshold": 0.5548682376720724,
+      "seed": 42,
+      "configuration": "config/final_nasa_model.json",
+      "serialization": "joblib / pickle",
+      "sklearn_version": "1.9.1",
+      "python_version": "3.14.6 (NASA freeze record)",
+      "inspection": "Fitted estimator/scaler state and, in bundles, identifiers and aggregate provenance; no training matrices, credentials or absolute local paths found.",
+      "tested_python_version": "3.14.6",
+      "joblib_serialization_version": "unknown at original serialization; 1.6.0 tested for loading"
+    },
+    {
+      "path": "models/final_nasa/model_bundle.joblib",
+      "size_bytes": 113688,
+      "sha256": "8801466200c725e5869ab6483a4b2ba2e93418013026c04b366aaa0f20045aee",
+      "kind": "bundle",
+      "dataset": "NASA",
+      "purpose": "Frozen final bundle",
+      "source": "models/final_nasa/model_bundle.joblib",
+      "provenance": "config/final_nasa_model.json; models/final_nasa/freeze_receipt.json",
+      "training_cells": [
+        "B0005",
+        "B0006"
+      ],
+      "validation_cells": [
+        "B0007"
+      ],
+      "test_cells": [
+        "B0018"
+      ],
+      "feature_family": "RELATIVE_B",
+      "features": [
+        "duration_s_prior10_robust_residual",
+        "time_to_3_4v_s_prior10_robust_residual",
+        "mean_voltage_v_prior10_robust_residual",
+        "mean_current_a_prior10_robust_residual",
+        "mean_temp_c_prior10_robust_residual",
+        "max_temp_c_prior10_robust_residual",
+        "delta_temp_c_prior10_robust_residual"
+      ],
+      "history_length": 10,
+      "threshold_percentile": 95,
+      "threshold": 0.5548682376720724,
+      "seed": 42,
+      "configuration": "config/final_nasa_model.json",
+      "serialization": "joblib / pickle",
+      "sklearn_version": "1.9.1",
+      "python_version": "3.14.6 (NASA freeze record)",
+      "inspection": "Fitted estimator/scaler state and, in bundles, identifiers and aggregate provenance; no training matrices, credentials or absolute local paths found.",
+      "tested_python_version": "3.14.6",
+      "joblib_serialization_version": "unknown at original serialization; 1.6.0 tested for loading"
+    },
+    {
+      "path": "deployment/pi/artifacts/model.joblib",
+      "size_bytes": 491357,
+      "sha256": "18ecd3c66d71e89c321570e683c8abdece4aab6d421e4121d4b46003a0f5dd63",
+      "kind": "estimator",
+      "dataset": "NASA",
+      "purpose": "Byte-identical NASA runtime copy required by unchanged Pi loader",
+      "source": "models/final_nasa/model.joblib",
+      "provenance": "config/final_nasa_model.json; models/final_nasa/freeze_receipt.json",
+      "training_cells": [
+        "B0005",
+        "B0006"
+      ],
+      "validation_cells": [
+        "B0007"
+      ],
+      "test_cells": [
+        "B0018"
+      ],
+      "feature_family": "RELATIVE_B",
+      "features": [
+        "duration_s_prior10_robust_residual",
+        "time_to_3_4v_s_prior10_robust_residual",
+        "mean_voltage_v_prior10_robust_residual",
+        "mean_current_a_prior10_robust_residual",
+        "mean_temp_c_prior10_robust_residual",
+        "max_temp_c_prior10_robust_residual",
+        "delta_temp_c_prior10_robust_residual"
+      ],
+      "history_length": 10,
+      "threshold_percentile": 95,
+      "threshold": 0.5548682376720724,
+      "seed": 42,
+      "configuration": "config/final_nasa_model.json",
+      "serialization": "joblib / pickle",
+      "sklearn_version": "1.9.1",
+      "python_version": "3.14.6 (NASA freeze record)",
+      "inspection": "Fitted estimator/scaler state and, in bundles, identifiers and aggregate provenance; no training matrices, credentials or absolute local paths found.",
+      "tested_python_version": "3.14.6",
+      "joblib_serialization_version": "unknown at original serialization; 1.6.0 tested for loading"
+    },
+    {
+      "path": "deployment/pi/artifacts/scaler.joblib",
+      "size_bytes": 1295,
+      "sha256": "ea80b93bc0d1fec25b5c760763f9c95ef859fcae6a67964fe24e4cabf1429f78",
+      "kind": "scaler",
+      "dataset": "NASA",
+      "purpose": "Byte-identical NASA runtime copy required by unchanged Pi loader",
+      "source": "models/final_nasa/scaler.joblib",
+      "provenance": "config/final_nasa_model.json; models/final_nasa/freeze_receipt.json",
+      "training_cells": [
+        "B0005",
+        "B0006"
+      ],
+      "validation_cells": [
+        "B0007"
+      ],
+      "test_cells": [
+        "B0018"
+      ],
+      "feature_family": "RELATIVE_B",
+      "features": [
+        "duration_s_prior10_robust_residual",
+        "time_to_3_4v_s_prior10_robust_residual",
+        "mean_voltage_v_prior10_robust_residual",
+        "mean_current_a_prior10_robust_residual",
+        "mean_temp_c_prior10_robust_residual",
+        "max_temp_c_prior10_robust_residual",
+        "delta_temp_c_prior10_robust_residual"
+      ],
+      "history_length": 10,
+      "threshold_percentile": 95,
+      "threshold": 0.5548682376720724,
+      "seed": 42,
+      "configuration": "config/final_nasa_model.json",
+      "serialization": "joblib / pickle",
+      "sklearn_version": "1.9.1",
+      "python_version": "3.14.6 (NASA freeze record)",
+      "inspection": "Fitted estimator/scaler state and, in bundles, identifiers and aggregate provenance; no training matrices, credentials or absolute local paths found.",
+      "tested_python_version": "3.14.6",
+      "joblib_serialization_version": "unknown at original serialization; 1.6.0 tested for loading"
+    },
+    {
+      "path": "models/final_calce/model.joblib",
+      "size_bytes": 713629,
+      "sha256": "e9184bd468e00835f3624587f09c5bf23a2ca2f612fba1bdd27fae270e97d31e",
+      "kind": "estimator",
+      "dataset": "CALCE",
+      "purpose": "Frozen final estimator",
+      "source": "models/final_calce/model.joblib",
+      "provenance": "config/final_calce_model.json; models/final_calce/freeze_receipt.json",
+      "training_cells": [
+        "CS2-35",
+        "CS2-36"
+      ],
+      "validation_cells": [
+        "CS2-37"
+      ],
+      "test_cells": [
+        "CS2-38"
+      ],
+      "feature_family": "CALCE trajectory-relative measurement features",
+      "features": [
+        "duration_s_prior10_robust_residual",
+        "time_to_3_4v_s_prior10_robust_residual",
+        "mean_voltage_v_prior10_robust_residual",
+        "mean_current_a_prior10_robust_residual"
+      ],
+      "history_length": 10,
+      "threshold_percentile": 95,
+      "threshold": 0.595563163424274,
+      "seed": 42,
+      "configuration": "config/final_calce_model.json",
+      "serialization": "joblib / pickle",
+      "sklearn_version": "1.9.1",
+      "python_version": "unknown: CALCE freeze receipt does not record Python",
+      "inspection": "Fitted estimator/scaler state and, in bundles, identifiers and aggregate provenance; no training matrices, credentials or absolute local paths found.",
+      "tested_python_version": "3.14.6",
+      "joblib_serialization_version": "unknown at original serialization; 1.6.0 tested for loading"
+    },
+    {
+      "path": "models/final_calce/scaler.joblib",
+      "size_bytes": 1127,
+      "sha256": "fcf02ec5b7f826799b134a2c4d187ba4090960394a97065e6fd180c4c8ddf9c7",
+      "kind": "scaler",
+      "dataset": "CALCE",
+      "purpose": "Frozen final scaler",
+      "source": "models/final_calce/scaler.joblib",
+      "provenance": "config/final_calce_model.json; models/final_calce/freeze_receipt.json",
+      "training_cells": [
+        "CS2-35",
+        "CS2-36"
+      ],
+      "validation_cells": [
+        "CS2-37"
+      ],
+      "test_cells": [
+        "CS2-38"
+      ],
+      "feature_family": "CALCE trajectory-relative measurement features",
+      "features": [
+        "duration_s_prior10_robust_residual",
+        "time_to_3_4v_s_prior10_robust_residual",
+        "mean_voltage_v_prior10_robust_residual",
+        "mean_current_a_prior10_robust_residual"
+      ],
+      "history_length": 10,
+      "threshold_percentile": 95,
+      "threshold": 0.595563163424274,
+      "seed": 42,
+      "configuration": "config/final_calce_model.json",
+      "serialization": "joblib / pickle",
+      "sklearn_version": "1.9.1",
+      "python_version": "unknown: CALCE freeze receipt does not record Python",
+      "inspection": "Fitted estimator/scaler state and, in bundles, identifiers and aggregate provenance; no training matrices, credentials or absolute local paths found.",
+      "tested_python_version": "3.14.6",
+      "joblib_serialization_version": "unknown at original serialization; 1.6.0 tested for loading"
+    },
+    {
+      "path": "models/final_calce/model_bundle.joblib",
+      "size_bytes": 724571,
+      "sha256": "491ab2d22826574dcbf7cf378596ec908bfc28f253617066de45ae32b61f586e",
+      "kind": "bundle",
+      "dataset": "CALCE",
+      "purpose": "Frozen final bundle",
+      "source": "models/final_calce/model_bundle.joblib",
+      "provenance": "config/final_calce_model.json; models/final_calce/freeze_receipt.json",
+      "training_cells": [
+        "CS2-35",
+        "CS2-36"
+      ],
+      "validation_cells": [
+        "CS2-37"
+      ],
+      "test_cells": [
+        "CS2-38"
+      ],
+      "feature_family": "CALCE trajectory-relative measurement features",
+      "features": [
+        "duration_s_prior10_robust_residual",
+        "time_to_3_4v_s_prior10_robust_residual",
+        "mean_voltage_v_prior10_robust_residual",
+        "mean_current_a_prior10_robust_residual"
+      ],
+      "history_length": 10,
+      "threshold_percentile": 95,
+      "threshold": 0.595563163424274,
+      "seed": 42,
+      "configuration": "config/final_calce_model.json",
+      "serialization": "joblib / pickle",
+      "sklearn_version": "1.9.1",
+      "python_version": "unknown: CALCE freeze receipt does not record Python",
+      "inspection": "Fitted estimator/scaler state and, in bundles, identifiers and aggregate provenance; no training matrices, credentials or absolute local paths found.",
+      "tested_python_version": "3.14.6",
+      "joblib_serialization_version": "unknown at original serialization; 1.6.0 tested for loading"
+    }
+  ],
+  "figures": [
+    {
+      "path": "artifacts/figures/nasa/relative_features/absolute_vs_relative_score_drift.png",
+      "size_bytes": 381848,
+      "sha256": "e823683602fbdcaf3158a34548245f392b60b229377667708f859cec9d67fc63",
+      "source": "figures/nasa/relative_features/absolute_vs_relative_score_drift.png",
+      "dataset": "NASA",
+      "cell": "B0007",
+      "split": "validation",
+      "evaluation": "clean",
+      "demonstrates": "Seed-mean within-model score drift, absolute versus relative. Scores have model-specific scales.",
+      "generator": "scripts/validate_nasa_relative_features.py",
+      "evidence": "results/nasa_relative_feature_validation.md",
+      "provenance": "Unmodified surviving research figure; generator and report match visual content. Formal publication use unknown."
+    },
+    {
+      "path": "artifacts/figures/nasa/relative_features/clean_fpr_by_history_window.png",
+      "size_bytes": 273781,
+      "sha256": "318fb07940b2894d8cbbaabcafec4584c5ff16df2aad91163e0842c96d6bf292",
+      "source": "figures/nasa/relative_features/clean_fpr_by_history_window.png",
+      "dataset": "NASA",
+      "cell": "B0007",
+      "split": "validation",
+      "evaluation": "clean",
+      "demonstrates": "Compares clean validation FPR across the evaluated history windows (k=5, 10, 20) and feature sets. k=10 with RELATIVE_B was used as the final reporting reference.",
+      "generator": "scripts/validate_nasa_relative_features.py",
+      "evidence": "results/nasa_relative_features/thresholds.csv",
+      "provenance": "Unmodified surviving research figure; generator and report match visual content. Formal publication use unknown."
+    },
+    {
+      "path": "artifacts/figures/nasa/final_test/b0018_clean_score_vs_cycle.png",
+      "size_bytes": 99740,
+      "sha256": "492869bc983ec52f5151482b45d8ac8b47e5fd503c830aeb6be54c21f545aa01",
+      "source": "figures/nasa/final_test/b0018_clean_score_vs_cycle.png",
+      "dataset": "NASA",
+      "cell": "B0018",
+      "split": "final test",
+      "evaluation": "clean",
+      "demonstrates": "Frozen P95: 5 of 122 scorable cycles flagged (4.10%).",
+      "generator": "scripts/finalize_nasa.py",
+      "evidence": "results/nasa_final_test/clean_temporal_statistics.csv",
+      "provenance": "Unmodified surviving research figure; generator and report match visual content. Formal publication use unknown."
+    },
+    {
+      "path": "artifacts/figures/calce/final_test/cs2_38_clean_score_vs_cycle.png",
+      "size_bytes": 173168,
+      "sha256": "e1a469f74e51418822e5c814abbb7f2c0e9746813387bceddea7f73a3f8a1985",
+      "source": "figures/calce/final_test/cs2_38_clean_score_vs_cycle.png",
+      "dataset": "CALCE",
+      "cell": "CS2-38",
+      "split": "final test",
+      "evaluation": "clean",
+      "demonstrates": "Separately fitted CALCE model: 32 of 1015 flagged (3.15%).",
+      "generator": "scripts/evaluate_final_calce.py",
+      "evidence": "results/calce_final_test/summary.json",
+      "provenance": "Unmodified surviving research figure; generator and report match visual content. Formal publication use unknown."
+    },
+    {
+      "path": "artifacts/figures/nasa/final_test/b0018_anomaly_score_distributions.png",
+      "size_bytes": 204517,
+      "sha256": "44f39c5aa7369ae62cb0140b4ff740f586c05ae1dee9de375625bfa6e819d521",
+      "source": "figures/nasa/final_test/b0018_anomaly_score_distributions.png",
+      "dataset": "NASA",
+      "cell": "B0018",
+      "split": "final test",
+      "evaluation": "clean and synthetic",
+      "demonstrates": "A2/A3/A4 score CDFs at three severities; synthetic labels are not observed faults.",
+      "generator": "scripts/finalize_nasa.py",
+      "evidence": "results/nasa_final_test/anomaly_metrics.csv",
+      "provenance": "Unmodified surviving research figure; generator and report match visual content. Formal publication use unknown."
+    },
+    {
+      "path": "artifacts/figures/nasa/final_test/b0018_A4_severity.png",
+      "size_bytes": 51502,
+      "sha256": "15a2efd8039423f5f6e508d029bf459fe59dc69a5d58b3138b76f09e99612cd6",
+      "source": "figures/nasa/final_test/b0018_A4_severity.png",
+      "dataset": "NASA",
+      "cell": "B0018",
+      "split": "final test",
+      "evaluation": "synthetic",
+      "demonstrates": "Weak gradual-drift recall 4.50/4.55/4.67%; precision/F1/AP use 50% evaluation prevalence. The pr_auc label denotes average precision.",
+      "generator": "scripts/finalize_nasa.py",
+      "evidence": "results/nasa_final_test/anomaly_metrics.csv",
+      "provenance": "Unmodified surviving research figure; generator and report match visual content. Formal publication use unknown."
+    }
+  ],
+  "evidence": [
+    {
+      "path": "config/anomaly_injection_protocol.json",
+      "size_bytes": 16225,
+      "sha256": "e00a3804aee6fb67f2280f7e2818a618e2d0c48be2a7b2daf6c9d6fefbfff017"
+    },
+    {
+      "path": "config/calce_anomaly_injection_protocol.json",
+      "size_bytes": 3249,
+      "sha256": "bea0792fb8e3ec2065458d2873366a4401e8a73d79fd70fb012e678b80068f37"
+    },
+    {
+      "path": "config/calce_experiment_protocol.json",
+      "size_bytes": 1174,
+      "sha256": "ab7ef8ccea50b584f10dfdaf48923a7de15792961bd1c67e22fc5185694637ca"
+    },
+    {
+      "path": "config/final_calce_model.json",
+      "size_bytes": 6483,
+      "sha256": "571fb85db6aba717bee1c7a1353a9ca20ac1fe9eab578d8f34740a2160bb00fe"
+    },
+    {
+      "path": "config/final_nasa_model.json",
+      "size_bytes": 12628,
+      "sha256": "fd4747b45ef8edfae3674fd284209b8df7b2aa4520906ca7ba9799eda46cde21"
+    },
+    {
+      "path": "config/nasa_experiment_protocol.json",
+      "size_bytes": 919,
+      "sha256": "2b06398c1f777904f95340c7c2d3023bb89b76cc7fbb117647adf1c69d8cd264"
+    },
+    {
+      "path": "config/nasa_feature_manifest.json",
+      "size_bytes": 1843,
+      "sha256": "ae29e5ea2168b9613d826188406cc69666a8ec7d421879145c3d75805e8edb4e"
+    },
+    {
+      "path": "config/nasa_model_development.json",
+      "size_bytes": 1573,
+      "sha256": "aa948dadb5e4a69a1628782079b30a74c5ce2bd57f95d5fb19fe58c163751329"
+    },
+    {
+      "path": "config/nasa_relative_feature_manifest.json",
+      "size_bytes": 3381,
+      "sha256": "9c9c5d9d0b76ccbc6962d3e103607bebc4907a5cbac36b92343497de64309d76"
+    },
+    {
+      "path": "results/calce_final_test/anomaly_metrics.csv",
+      "size_bytes": 1928,
+      "sha256": "cb51ec4b976324f362161e47ec19c36aebceb6f232bef331072505d8aef3ebf4"
+    },
+    {
+      "path": "results/calce_final_test/clean_periods.csv",
+      "size_bytes": 627,
+      "sha256": "cb879cfb70dee23a45cadb1653a48fa15964f92487230542c2efb5e9429381b1"
+    },
+    {
+      "path": "results/calce_final_test/development_comparison.csv",
+      "size_bytes": 3914,
+      "sha256": "a96cc4dcad45f1467175c07a8bcb676b133a35fdd4448921b9af5fe03ff6a5a2"
+    },
+    {
+      "path": "results/calce_final_test/integrity_checks.json",
+      "size_bytes": 4354,
+      "sha256": "8fd84e887e6e0ac2284f3bc9fcdcd87ff75c00151110f4ddb85caff993e51542"
+    },
+    {
+      "path": "results/calce_final_test/summary.json",
+      "size_bytes": 753,
+      "sha256": "e7fa7f763ee41b81d55b83771bfca520c1c5809e9f59deb1db2ab318b2f94fa0"
+    },
+    {
+      "path": "results/calce_final_test/synthetic_window_counts.csv",
+      "size_bytes": 488,
+      "sha256": "b6684e911336fe696ceaae9c1248baae88acc33813955753c12502a2eb35ebfe"
+    },
+    {
+      "path": "results/calce_final_test/verification_results.json",
+      "size_bytes": 373,
+      "sha256": "546f52fcb4515ed1dd88db2d27b085537d8ad6e5918b704fb73dc841939cd0f4"
+    },
+    {
+      "path": "results/calce_final_test.md",
+      "size_bytes": 11052,
+      "sha256": "8ba9e0cf2656409c427aaf5fd43b57cba1d7252ef1400452a5e38318a1135d9c"
+    },
+    {
+      "path": "results/calce_replication/anomaly_metrics.csv",
+      "size_bytes": 5731,
+      "sha256": "ce3ed52eb05a8099835db2f70ab49444b367adc5480dd87ed687cb0bf60e4ccf"
+    },
+    {
+      "path": "results/calce_replication/anomaly_seed_stability.csv",
+      "size_bytes": 1564,
+      "sha256": "44859dc9707ababd6da938154d380383cfe5eb8ca5a0d44e5ec48174bb3a64f1"
+    },
+    {
+      "path": "results/calce_replication/integrity_checks.json",
+      "size_bytes": 96997,
+      "sha256": "b3923ee1001c58cf27be130e7de9c5f357f07d6a539f782e044f1ebd9961e8cf"
+    },
+    {
+      "path": "results/calce_replication/relative_feature_shifts.csv",
+      "size_bytes": 646,
+      "sha256": "6286a655540a90aa7efb93f289e27852a3c68cd4f8178233fb313c4d84ec1824"
+    },
+    {
+      "path": "results/calce_replication/score_distributions.csv",
+      "size_bytes": 992,
+      "sha256": "f737e0d9075e0ac5e25e925e2b60c7dcc0aedce31376caaa2c4b1d99a940bf0b"
+    },
+    {
+      "path": "results/calce_replication/score_drift.csv",
+      "size_bytes": 380,
+      "sha256": "b76afe732ddee630dd6f680fb4e5e66262e770516dfd7e3a71a6cbd6b3bde638"
+    },
+    {
+      "path": "results/calce_replication/synthetic_window_counts.csv",
+      "size_bytes": 488,
+      "sha256": "71733271822cc4825847e9bddff243066b4b38d8c21af4749bc9e9c30385a39b"
+    },
+    {
+      "path": "results/calce_replication/threshold_seed_stability.csv",
+      "size_bytes": 298,
+      "sha256": "1ec5a837ea32a3b6dd75a7cdf373f08b86b5c29312eb0121fc5725122866a7c8"
+    },
+    {
+      "path": "results/calce_replication/thresholds.csv",
+      "size_bytes": 914,
+      "sha256": "67d74bf2410bd29e7d6d4a8f4f73c12187535775a792356342028f758d065c44"
+    },
+    {
+      "path": "results/calce_replication/verification_results.json",
+      "size_bytes": 174,
+      "sha256": "798f8824d5c16b1d43baad36a55467b519c29b266f82a2fc7422de2c8c24c9f3"
+    },
+    {
+      "path": "results/calce_replication_validation.md",
+      "size_bytes": 16986,
+      "sha256": "62e0d830a154f62a32ea9cc23442787c7e93364ed23c11172412acf528534061"
+    },
+    {
+      "path": "results/nasa_burnin_calibration/burnin_integrity.json",
+      "size_bytes": 5278,
+      "sha256": "8f34a1bc358dd6b0c03d8bc642ad859c46955e27d1e418257b5f19da4bed7752"
+    },
+    {
+      "path": "results/nasa_burnin_calibration/burnin_review.csv",
+      "size_bytes": 7328,
+      "sha256": "01e9ada69f5c639365dc9c7403b5a369ab064e65685dd666a58623243fe322e0"
+    },
+    {
+      "path": "results/nasa_burnin_calibration/burnin_seed_stability.csv",
+      "size_bytes": 8613,
+      "sha256": "63e259c0b00ae258e39b4c0adf11d09e1b353b9a3300ba0a05306e2d9af7c044"
+    },
+    {
+      "path": "results/nasa_burnin_calibration/burnin_thresholds.csv",
+      "size_bytes": 31033,
+      "sha256": "64380d2c10a7bb3b8e23ce467c7f89a3d9f88a434766480fa72c952289c5c53f"
+    },
+    {
+      "path": "results/nasa_burnin_calibration/eligible_anomaly_metrics.csv",
+      "size_bytes": 221,
+      "sha256": "82163a066721a5777386b6d44862e96e7106cedd828bc1affeda4771b7d339f3"
+    },
+    {
+      "path": "results/nasa_burnin_calibration/eligible_configurations.csv",
+      "size_bytes": 139,
+      "sha256": "308b4380098cfa9604f598d9dca050aa062ba0c4476522d1bbce68648bb7430f"
+    },
+    {
+      "path": "results/nasa_burnin_calibration/feature_shifts.csv",
+      "size_bytes": 3806,
+      "sha256": "48d744bf58917d04099288c6580b92b3f083ff5af70ca0bf2db16dbdc2097921"
+    },
+    {
+      "path": "results/nasa_burnin_calibration/shift_integrity.json",
+      "size_bytes": 4771,
+      "sha256": "354c78a7ea528f6710ff094787cc8614a6a35aab01f386e860c084838bcd2bb9"
+    },
+    {
+      "path": "results/nasa_burnin_calibration/shift_score_distributions.csv",
+      "size_bytes": 13419,
+      "sha256": "bcec85ddbfc2eaa4829d131e56d8b6fffb02a69810af0d324c6a4fa3fc11320e"
+    },
+    {
+      "path": "results/nasa_burnin_calibration/shift_score_seed_stability.csv",
+      "size_bytes": 5058,
+      "sha256": "70abdbe039af7f50fbb0489533a8b2fb1871c0919f49ef3f8ec75818dba5c6b3"
+    },
+    {
+      "path": "results/nasa_burnin_calibration/validation_checks.json",
+      "size_bytes": 280,
+      "sha256": "42a1654c090eea00d04c472368335c2d1120c8950be96434bf9e60fc996e5461"
+    },
+    {
+      "path": "results/nasa_burnin_calibration.md",
+      "size_bytes": 54372,
+      "sha256": "777866c1172c5ddae287a4227d5ecf5b677b9c51af023e242463dbf4e14ade86"
+    },
+    {
+      "path": "results/nasa_failure_analysis/a1_sustained_return_diagnostics.csv",
+      "size_bytes": 1380,
+      "sha256": "12ccd2895da754ca3a5ca62dd929e56926c74acd3a3edbdabca46025cb01b56f"
+    },
+    {
+      "path": "results/nasa_failure_analysis/a4_residual_summary.csv",
+      "size_bytes": 5441,
+      "sha256": "7d9a1826b1b6e854ae6e5d22b1d90aa7fb4621eb6fcba509667cf588eada2e77"
+    },
+    {
+      "path": "results/nasa_failure_analysis/adaptation_summary.csv",
+      "size_bytes": 10416,
+      "sha256": "488c54bbf62d5022edb00ecd9a1d84f1fe5b0ad833fe7dbf509998131fa0b1ff"
+    },
+    {
+      "path": "results/nasa_failure_analysis/integrity_checks.json",
+      "size_bytes": 54418,
+      "sha256": "1cd7da403dc7c404504f665bb349d91d7e46d6a74c25f1ff4196eb1b8e12efc5"
+    },
+    {
+      "path": "results/nasa_failure_analysis/reference_existing_metrics.csv",
+      "size_bytes": 8942,
+      "sha256": "2ecd21dab005f7d244ec2e4839033606a79bb183b81aff915c3f3da25a6da44a"
+    },
+    {
+      "path": "results/nasa_failure_analysis/seed_rank_correlations.csv",
+      "size_bytes": 11756,
+      "sha256": "d2cfc498c32747167e420deefae6bba253176e596c0fe34105aaf39765a50e82"
+    },
+    {
+      "path": "results/nasa_failure_analysis/seed_score_and_threshold_diagnostics.csv",
+      "size_bytes": 74646,
+      "sha256": "8fec61021150ec32e771545c7b83a9ef4268be673ebfe00b4d4232f90b8d3c59"
+    },
+    {
+      "path": "results/nasa_failure_analysis/verification_results.json",
+      "size_bytes": 230,
+      "sha256": "62565294741267352f22b4a6e5ac8df9153e259c647090c01c6d015cdc635394"
+    },
+    {
+      "path": "results/nasa_failure_analysis.md",
+      "size_bytes": 36676,
+      "sha256": "00ca79b4351c55904171a3f5087796e27cb4461b4d4a9a181968b6c937858d07"
+    },
+    {
+      "path": "results/nasa_final_test/anomaly_metrics.csv",
+      "size_bytes": 5289,
+      "sha256": "9f3db575f545c0c223b2af0123654bfad95c903df317f8ea6156986b3ab8d2bb"
+    },
+    {
+      "path": "results/nasa_final_test/clean_temporal_statistics.csv",
+      "size_bytes": 617,
+      "sha256": "e659059cad85ae79d0327e49808a2ad09592d6565fca9792f20c5a063c979ba4"
+    },
+    {
+      "path": "results/nasa_final_test/development_comparison_metrics.csv",
+      "size_bytes": 2571,
+      "sha256": "f6d09220d424e0d41bdf2048264f775fa1fb1b6fa9b6f10cda92e578cd9a0560"
+    },
+    {
+      "path": "results/nasa_final_test/development_temporal_scores.csv",
+      "size_bytes": 564,
+      "sha256": "b3d2d31999cb4699cb96f9f2a434df723c82a0f2eb1a67e5c7365ef988712ab4"
+    },
+    {
+      "path": "results/nasa_final_test/evaluation_started.json",
+      "size_bytes": 169,
+      "sha256": "7b9fbeba69c05c5f7bf935798c2f576f8562fae2336f2eea6bf7f94db993f7d9"
+    },
+    {
+      "path": "results/nasa_final_test/injection_window_counts.csv",
+      "size_bytes": 971,
+      "sha256": "a98ca50cd30573ed38dc3d7cc2a34a0070eed48cab314563584c988d78d1553e"
+    },
+    {
+      "path": "results/nasa_final_test/integrity_receipt.json",
+      "size_bytes": 6499,
+      "sha256": "ff522c57bb27abea830acea26f15b679a9c51c4a0d01a71553715cd8066e6c60"
+    },
+    {
+      "path": "results/nasa_final_test/score_distributions.csv",
+      "size_bytes": 4018,
+      "sha256": "967af5ee9c3871f92a5b58bd4f6610bff33f8035fb1ae7c74c4ac3f4aa1a07b3"
+    },
+    {
+      "path": "results/nasa_final_test/verification_results.json",
+      "size_bytes": 277,
+      "sha256": "44a4ef28b23a040b7f1b41dc175c870bec513f81ff05989defbf27dc797e1a79"
+    },
+    {
+      "path": "results/nasa_final_test.md",
+      "size_bytes": 15705,
+      "sha256": "0a24569e9ffee50a8bda4193bd80337945ff4b52d6a595333e2c993ed13129a5"
+    },
+    {
+      "path": "results/nasa_model_validation/injection_window_counts.csv",
+      "size_bytes": 1257,
+      "sha256": "a3eca97162e68c4e0e06be801895e6694d868c3fed28d8e58f2b9a3fa7af693a"
+    },
+    {
+      "path": "results/nasa_model_validation/metric_seed_stability.csv",
+      "size_bytes": 209926,
+      "sha256": "c78e8fbd4b2fc10c013b1516c2d3e55372650cb4bdb5c54c2de3554921d80a37"
+    },
+    {
+      "path": "results/nasa_model_validation/metrics.csv",
+      "size_bytes": 620955,
+      "sha256": "5afcbbc4cc7254881c2ef32b89ab3ffa7ff7fcdebdca72bc38ba785d3bccf62c"
+    },
+    {
+      "path": "results/nasa_model_validation/run_provenance.json",
+      "size_bytes": 1578,
+      "sha256": "9c2d2b9b16fe1b0c24994db73221da0c9abeea926ecfc19b313df653c20735eb"
+    },
+    {
+      "path": "results/nasa_model_validation/score_distributions.csv",
+      "size_bytes": 117718,
+      "sha256": "103abeb94d2db3c6ab998fd005116ffbaf835656146ba00d2dea8ecea0ee970b"
+    },
+    {
+      "path": "results/nasa_model_validation/score_seed_stability.csv",
+      "size_bytes": 50437,
+      "sha256": "0312d335d92d0e289699ebd6534740dff656c01d47f32e8e6a882f179a152f0b"
+    },
+    {
+      "path": "results/nasa_model_validation/threshold_review.json",
+      "size_bytes": 1925,
+      "sha256": "8a98983c8f081aecc64bb09a53532ed500b296b1814416a35c3cb44c7d8462ab"
+    },
+    {
+      "path": "results/nasa_model_validation/threshold_seed_stability.csv",
+      "size_bytes": 2812,
+      "sha256": "58a6f9282db8872f4bf82d32536ffd3196b5881dae732d1b045096bbf4342959"
+    },
+    {
+      "path": "results/nasa_model_validation/thresholds.csv",
+      "size_bytes": 11015,
+      "sha256": "60f689205764213ad23d36855b56267b65dfae32972ee8e09bc6f6c977b7d48b"
+    },
+    {
+      "path": "results/nasa_model_validation/validation_checks.json",
+      "size_bytes": 482,
+      "sha256": "f2b957fc6a22ea49e17313a68c1f666075b928fd861589a73f14c56a0fe23138"
+    },
+    {
+      "path": "results/nasa_model_validation.md",
+      "size_bytes": 74283,
+      "sha256": "122ec43f323cac386c02463cb9cc9a50297104b5d4a2a81491f958b52c01a264"
+    },
+    {
+      "path": "results/nasa_relative_feature_validation.md",
+      "size_bytes": 63107,
+      "sha256": "458c8098dd24881c72cbfbe467f22b87b3962877400872c59462e3bb79849d50"
+    },
+    {
+      "path": "results/nasa_relative_features/denominator_diagnostics.csv",
+      "size_bytes": 6816,
+      "sha256": "4ef6b1fc992cb43b7b43c67de94f4bc5731d2c23bb392861279c15b55b498ff3"
+    },
+    {
+      "path": "results/nasa_relative_features/eligibility_review.csv",
+      "size_bytes": 6864,
+      "sha256": "684536b1f5a3fe5b8c6753a728dfcc8f59d04ddfaa88307441e0eeda495e1024"
+    },
+    {
+      "path": "results/nasa_relative_features/eligible_anomaly_metrics.csv",
+      "size_bytes": 999313,
+      "sha256": "fabfe6b425f761197041426767fd139b6a812cda6e91a981217e3c6f042aeb64"
+    },
+    {
+      "path": "results/nasa_relative_features/eligible_anomaly_seed_stability.csv",
+      "size_bytes": 342195,
+      "sha256": "fe72108fa326da4a980b5f7a9bc125308d67adbed60f8aba08d7c8062a18535b"
+    },
+    {
+      "path": "results/nasa_relative_features/eligible_configurations.csv",
+      "size_bytes": 5467,
+      "sha256": "a116785385748cdb7d2beca8ba8efb1679864404db86762c61d1383aa0fb8928"
+    },
+    {
+      "path": "results/nasa_relative_features/injection_window_counts.csv",
+      "size_bytes": 3375,
+      "sha256": "cbaac359a011e0f6daca28db273201f725caf74b6109366286c3c8cd4ad37322"
+    },
+    {
+      "path": "results/nasa_relative_features/relative_feature_shifts.csv",
+      "size_bytes": 8097,
+      "sha256": "091472a661ca6cfd700d1baa43e14698138133491c31f875732f78bdb87ebc19"
+    },
+    {
+      "path": "results/nasa_relative_features/run_integrity.json",
+      "size_bytes": 5602,
+      "sha256": "16d0079008fb9a7c941049368b2c795ff7a22d14aefb7b2e1a2c886a1e8c7bc1"
+    },
+    {
+      "path": "results/nasa_relative_features/sample_counts.csv",
+      "size_bytes": 224,
+      "sha256": "f471acb4523107026e4c0bdd170f66a4444e3fba1bb9be9a7f3c3e677095df51"
+    },
+    {
+      "path": "results/nasa_relative_features/score_distributions.csv",
+      "size_bytes": 25141,
+      "sha256": "e4140c7703e92be1af3483cedf6c06f210654ee63107885efb00f846138f5843"
+    },
+    {
+      "path": "results/nasa_relative_features/score_drift.csv",
+      "size_bytes": 15921,
+      "sha256": "469ed1aeaf7f640c57011fc343f9001d5bfe590a50a3e3f183dafc590435c207"
+    },
+    {
+      "path": "results/nasa_relative_features/score_drift_seed_stability.csv",
+      "size_bytes": 7958,
+      "sha256": "ffc06786570fdea041ea7206b21cc3ae7e43c47b4e1e429e779fe11255ee1719"
+    },
+    {
+      "path": "results/nasa_relative_features/threshold_seed_stability.csv",
+      "size_bytes": 7549,
+      "sha256": "2bb03edf7d435005ff4c30fd938665b270cac40dd4582d5ac795ad818565189e"
+    },
+    {
+      "path": "results/nasa_relative_features/thresholds.csv",
+      "size_bytes": 31044,
+      "sha256": "13c1b8fa5458c712565a956c9cdd162c07e10c84b20c34f3c2f8a7e81d29ee82"
+    },
+    {
+      "path": "results/nasa_relative_features/validation_checks.json",
+      "size_bytes": 491,
+      "sha256": "7c1b0868d9331225de23a3417a74538c4c2475e29a087d413f54915c87117ebf"
+    },
+    {
+      "path": "models/final_calce/final_calce_model.sha256",
+      "size_bytes": 97,
+      "sha256": "494e6fbdcd45023553cfca3d38320c6b1454e5ff28f5f26ae92948a175eb342a"
+    },
+    {
+      "path": "models/final_calce/freeze_receipt.json",
+      "size_bytes": 39867,
+      "sha256": "208f33469d8127758643c3a6b660eccbeaa4f3c4422e58572267e2fac8c56913"
+    },
+    {
+      "path": "models/final_nasa/final_nasa_model.sha256",
+      "size_bytes": 96,
+      "sha256": "a78faa4521c4daec4aaa6d556107d5c9b7bed9553b2628bef8cebbccd0b27883"
+    },
+    {
+      "path": "models/final_nasa/freeze_receipt.json",
+      "size_bytes": 325,
+      "sha256": "ba7fe753bee393eb0219947a0a5d9ff555a97cb6871b44b8c5b85bba1b8798e7"
+    },
+    {
+      "path": "deployment/pi/artifacts/artifact_hashes.json",
+      "size_bytes": 859,
+      "sha256": "ca72482e2e832c1b3aa079f065468423f29b1db0979dd611cacc1af900a00b45"
+    },
+    {
+      "path": "deployment/pi/artifacts/final_nasa_model.json",
+      "size_bytes": 12628,
+      "sha256": "fd4747b45ef8edfae3674fd284209b8df7b2aa4520906ca7ba9799eda46cde21"
+    },
+    {
+      "path": "deployment/pi/artifacts/final_nasa_model.sha256",
+      "size_bytes": 96,
+      "sha256": "a78faa4521c4daec4aaa6d556107d5c9b7bed9553b2628bef8cebbccd0b27883"
+    },
+    {
+      "path": "deployment/pi/artifacts/nasa_relative_feature_manifest.json",
+      "size_bytes": 3381,
+      "sha256": "9c9c5d9d0b76ccbc6962d3e103607bebc4907a5cbac36b92343497de64309d76"
+    },
+    {
+      "path": "deployment/pi/results/integrity_verification.json",
+      "size_bytes": 198,
+      "sha256": "541183b894f3faa1a7a8973fc2a7c0cf1ea71de2c478c518963e86d928b4dd88"
+    },
+    {
+      "path": "deployment/pi/results/pi_benchmark.json",
+      "size_bytes": 2535,
+      "sha256": "274ffbd8a7cd2f9aa9e1de1eee8846d4b6a8a1805a1257329e4ef0c4d811afd2"
+    },
+    {
+      "path": "deployment/pi/results/pi_benchmark.txt",
+      "size_bytes": 1771,
+      "sha256": "8b004683ff849f3ec60741e7406ce4184e848fe1c51cf0ce9224884fb06b2a2b"
+    },
+    {
+      "path": "deployment/pi/results/pi_environment.txt",
+      "size_bytes": 3032,
+      "sha256": "5d6b6a9219d3659d0d069ded8177793b120a9fc819023b301fe21d8689615e7f"
+    },
+    {
+      "path": "deployment/pi/results/playback_validation.json",
+      "size_bytes": 226,
+      "sha256": "26f4636593353529608dcce3c6d3c446a9c3ebd2d90fc83ef1231d3fd139c877"
+    },
+    {
+      "path": "deployment/pi/results/research_hashes_before.json",
+      "size_bytes": 52585,
+      "sha256": "d7fc015adc83f77b666e041679ec0362c522088acd410a35538e6cdd6e086c89"
+    }
+  ]
+}

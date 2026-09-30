@@ -30,6 +30,16 @@ data/processed/
 models/development/
 *.joblib
 
+# Exact final frozen release allowlist (development collections stay excluded)
+!models/final_nasa/model.joblib
+!models/final_nasa/scaler.joblib
+!models/final_nasa/model_bundle.joblib
+!models/final_calce/model.joblib
+!models/final_calce/scaler.joblib
+!models/final_calce/model_bundle.joblib
+!deployment/pi/artifacts/model.joblib
+!deployment/pi/artifacts/scaler.joblib
+
 # Edge deployment sample data and unpacked binaries
 deployment/pi/sample_data/
 deployment/pi/model.joblib
@@ -37,6 +47,8 @@ deployment/pi/scaler.joblib
 
 # Figures (deferred from initial public release)
 figures/
+!artifacts/figures/
+!artifacts/figures/**
 
 # Local generated outputs and temporary files
 output/
@@ -63,6 +75,7 @@ RECONSTRUCTION_PHASE3_REPORT.md
 
 # Internal publication report
 RECONSTRUCTION_PHASE4_REPORT.md
+V02_REPRODUCIBILITY_AUDIT.md
 
 # Local inventories and regenerated edge outputs
 folder_structure.txt

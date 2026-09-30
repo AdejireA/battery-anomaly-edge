@@ -35,6 +35,8 @@ The benchmark executed 1,000 timed inference calls with 100 untimed warmup calls
 - **Memory consumption (RSS):** Approximately 130 MB
 - **Power consumption:** Not measured
 
+According to the recovered conversational history, an initial Pi session recorded `get_throttled = 0x50000` and was rejected. The Pi was rebooted under improved power conditions, and the accepted benchmark session reported `0x0` before and after the benchmark. The saved `results/pi_environment.txt` directly preserves only the post-benchmark `0x0`; the pre-benchmark `0x0` is supported by the recovered conversational history rather than independently preserved in that saved environment file.
+
 ### Historical memory accounting note
 In `results/pi_benchmark.json`, `psutil` reported:
 - `rss_bytes`: 129,765,376 (~123.76 MiB)
@@ -59,13 +61,13 @@ The receipt in `results/integrity_verification.json` includes:
 ```
 This flag belongs to the pre-transfer packaging verification stage, which was executed on the x86_64 development workstation before transfer to verify that all deployment dependencies and files were bundled. It does not contradict the subsequent physical Raspberry Pi benchmark records ([results/pi_benchmark.json](results/pi_benchmark.json) and [results/pi_environment.txt](results/pi_environment.txt)), which document execution on the physical device.
 
-## Omitted binaries and reproduction instructions
+## Released binaries and reproduction instructions
 
-This release omits `artifacts/model.joblib`, `artifacts/scaler.joblib` and `sample_data/`. The runtime cannot execute from the compact public tree alone.
+The exact frozen NASA `artifacts/model.joblib` and `artifacts/scaler.joblib` are included in v0.2, byte-identical to `models/final_nasa/`. The unchanged runtime verifies their historical hashes and exact dependency versions. Do not disable checks to load a newly fitted model.
 
-`infer.py` requires the exact trusted historical model/scaler hashes and pinned dependencies. Training a new absolute-feature model with `train_nasa_isolation_forest.py` cannot supply these artifacts, and independently fitting a relative model does not guarantee their bytes. Historical replay requires the omitted approved archival artifacts and inputs; no download is promised here. Do not disable hash checks or alter frozen constants to force a new model to load.
+Source-derived `sample_data/` remains excluded. Replay requires independently reconstructed cycle observations and expected scores. See the [reproduction guide](../../docs/reproduction.md) for explicit input/output commands that preserve benchmark evidence. For a no-data demonstration use [the synthetic demo](../../demo/README.md), which fits a separate illustrative model.
 
-The recorded Pi environment used Python 3.13.5 with dependencies listed in `requirements-pi.txt`. Inspect the implementation and [benchmark evidence](results/pi_benchmark.json) directly without running inference. Warm timing excludes CSV I/O and context preparation; fresh-process loading does not flush OS caches.
+The recorded Pi environment used Python 3.13.5 with dependencies listed in `requirements-pi.txt`. Warm timing excludes CSV I/O and context preparation; fresh-process loading does not flush OS caches. v0.2 verifies loading on the workstation but does not repeat the physical Pi benchmark.
 
 ## Operational scope and limitations
 
